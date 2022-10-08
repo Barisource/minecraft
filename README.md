@@ -1,2 +1,2 @@
 # minecraft
-MineCraftGoodness
+MineCraft Goodness
