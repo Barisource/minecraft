@@ -14,10 +14,10 @@
 	fill ~-3 ~48 ~-3 ~82 ~51 ~82 air
 	fill ~-3 ~52 ~-3 ~82 ~45 ~82 air
 	
-	fill ~-3 ~0 ~-3 ~82 ~0 ~82 grass
+	fill ~-5 ~0 ~-5 ~85 ~0 ~85 grass
 	
-	fill ~-4 ~-1 ~-4 ~83 ~-1 ~83 grass
-	fill ~-6 ~-2 ~-6 ~85 ~-2 ~85 grass
+	fill ~-7 ~-1 ~-7 ~87 ~-1 ~87 grass
+	# fill ~-8 ~-2 ~-8 ~85 ~-2 ~85 grass
 # https://minecraft.fandom.com/wiki/Sapling
 
 	setblock ~-4 ~-1 ~-4 sapling 4
@@ -150,7 +150,8 @@ fill ~34 ~1 ~10 ~45 ~31 ~10 glass
 	fill ~39 ~0 ~06 ~39 ~0 ~06 quartz_block
 	fill ~38 ~0 ~06 ~38 ~0 ~06 redstone_wire
 	fill ~37 ~-1 ~06 ~37 ~-1 ~06 redstone_wire
-	fill ~39 ~1 ~06 ~39 ~1 ~06 polished_blackstone_pressure_plate
+	# fill ~39 ~1 ~06 ~39 ~1 ~06 polished_blackstone_pressure_plate
+	fill ~39 ~1 ~06 ~39 ~1 ~06 dark_oak_button 1
 	fill ~40 ~0 ~10 ~40 ~0 ~10 quartz_block
 	fill ~40 ~0 ~09 ~39 ~0 ~09 quartz_block
 
@@ -159,7 +160,8 @@ fill ~34 ~1 ~10 ~45 ~31 ~10 glass
 	fill ~39 ~0 ~10 ~39 ~0 ~10 quartz_block
 	fill ~38 ~0 ~10 ~38 ~0 ~10 redstone_wire
 	fill ~37 ~-1 ~10 ~37 ~-1 ~10 redstone_wire
-	fill ~39 ~1 ~10 ~39 ~1 ~10 polished_blackstone_pressure_plate
+	# fill ~39 ~1 ~10 ~39 ~1 ~10 polished_blackstone_pressure_plate
+	fill ~39 ~1 ~10 ~39 ~1 ~10 dark_oak_button 1
 	fill ~40 ~0 ~06 ~40 ~0 ~06 quartz_block
 	fill ~40 ~0 ~07 ~39 ~0 ~07 quartz_block
 
@@ -1444,18 +1446,54 @@ fill ~68 ~1 ~15 ~68 ~31 ~15 ochre_froglight
 		# https://minecraft.fandom.com/wiki/Block_states#Beds
 		setblock ~4 ~1 ~39    bed 1
 		setblock ~4 ~1 ~40    bed 1
+		setblock ~4 ~1 ~41    chest ["facing_direction": 5]
+			replaceitem block ~4 ~1 ~41 slot.container 0 netherite_sword 10 
+			replaceitem block ~4 ~1 ~41 slot.container 1 netherite_chestplate 11
+			replaceitem block ~4 ~1 ~41 slot.container 2 netherite_helmet 12
+			replaceitem block ~4 ~1 ~41 slot.container 3 netherite_leggings 64
+			replaceitem block ~4 ~1 ~41 slot.container 4 shield 64
+			replaceitem block ~4 ~1 ~41 slot.container 5 enchanted_golden_apple 64
 
 		setblock ~4 ~9 ~39    bed 1
 		setblock ~4 ~9 ~40    bed 1
+		setblock ~4 ~9 ~41    chest ["facing_direction": 5]
+			replaceitem block ~4 ~9 ~41 slot.container 0 netherite_sword 10 
+			replaceitem block ~4 ~9 ~41 slot.container 1 netherite_chestplate 11
+			replaceitem block ~4 ~9 ~41 slot.container 2 netherite_helmet 12
+			replaceitem block ~4 ~9 ~41 slot.container 3 netherite_leggings 64
+			replaceitem block ~4 ~9 ~41 slot.container 4 netherite_boots 64
+			replaceitem block ~4 ~9 ~41 slot.container 5 enchanted_golden_apple 64
 
 		setblock ~4 ~17 ~39    bed 1
 		setblock ~4 ~17 ~40    bed 1
+		setblock ~4 ~17 ~41    chest ["facing_direction": 5]
+			replaceitem block ~4 ~17 ~41 slot.container 0 netherite_sword 10 
+			replaceitem block ~4 ~17 ~41 slot.container 1 netherite_chestplate 11
+			replaceitem block ~4 ~17 ~41 slot.container 2 netherite_helmet 12
+			replaceitem block ~4 ~17 ~41 slot.container 3 netherite_leggings 64
+			replaceitem block ~4 ~17 ~41 slot.container 4 netherite_boots 64
+			replaceitem block ~4 ~17 ~41 slot.container 5 bone_meal 64
 
 		setblock ~4 ~25 ~39    bed 1
 		setblock ~4 ~25 ~40    bed 1
+		setblock ~4 ~25 ~41    chest ["facing_direction": 5]
+			replaceitem block ~4 ~25 ~41 slot.container 0 netherite_sword 10 
+			replaceitem block ~4 ~25 ~41 slot.container 1 netherite_chestplate 11
+			replaceitem block ~4 ~25 ~41 slot.container 2 netherite_helmet 12
+			replaceitem block ~4 ~25 ~41 slot.container 3 netherite_leggings 64
+			replaceitem block ~4 ~25 ~41 slot.container 4 netherite_boots 64
+			replaceitem block ~4 ~25 ~41 slot.container 5 bone 64
 
 		setblock ~4 ~33 ~39    bed 1
-		setblock ~4 ~33 ~40    bed 1
+		setblock ~4 ~33 ~40    bed 1	
+		setblock ~4 ~33 ~41    chest ["facing_direction": 5]
+			replaceitem block ~4 ~33 ~41 slot.container 0 netherite_sword 10 
+			replaceitem block ~4 ~33 ~41 slot.container 1 netherite_chestplate 11
+			replaceitem block ~4 ~33 ~41 slot.container 2 netherite_helmet 12
+			replaceitem block ~4 ~33 ~41 slot.container 3 netherite_leggings 64
+			replaceitem block ~4 ~33 ~41 slot.container 4 netherite_boots 64
+			replaceitem block ~4 ~33 ~41 slot.container 5 apple 64		
+
 		
 	# END: Eastern Tower
 
@@ -1555,18 +1593,56 @@ fill ~68 ~1 ~15 ~68 ~31 ~15 ochre_froglight
 		# https://minecraft.fandom.com/wiki/Block_states#Beds
 		setblock ~75 ~1 ~39    bed 3
 		setblock ~75 ~1 ~40    bed 3
+		setblock ~74 ~1 ~41    chest ["facing_direction": 4]
+			replaceitem block ~74 ~1 ~41 slot.container 0 netherite_sword 10 
+			replaceitem block ~74 ~1 ~41 slot.container 1 stained_glass 64 15
+			replaceitem block ~74 ~1 ~41 slot.container 2 stained_glass 64 6
+			replaceitem block ~74 ~1 ~41 slot.container 3 stained_glass 64 3
+			replaceitem block ~74 ~1 ~41 slot.container 4 planks 64 3
+			replaceitem block ~74 ~1 ~41 slot.container 5 wood 64 3
 
+
+		#DTM 
 		setblock ~75 ~9 ~39    bed 3
 		setblock ~75 ~9 ~40    bed 3
+		setblock ~75 ~9 ~41    chest ["facing_direction": 4]
+			replaceitem block ~75 ~9 ~41 slot.container 0 netherite_sword 10 
+			replaceitem block ~75 ~9 ~41 slot.container 1 stained_glass 64 14
+			replaceitem block ~75 ~9 ~41 slot.container 2 stained_glass 64 7
+			replaceitem block ~75 ~9 ~41 slot.container 3 stained_glass 64 4
+			replaceitem block ~75 ~9 ~41 slot.container 4 planks 64 4
+			replaceitem block ~75 ~9 ~41 slot.container 5 wood 64 4
 
 		setblock ~75 ~17 ~39    bed 3
 		setblock ~75 ~17 ~40    bed 3
-
+		setblock ~75 ~17 ~41    chest ["facing_direction": 4]
+			replaceitem block ~75 ~17 ~41 slot.container 0 netherite_sword 10 
+			replaceitem block ~75 ~17 ~41 slot.container 1 stained_glass 64 13
+			replaceitem block ~75 ~17 ~41 slot.container 2 stained_glass 64 8
+			replaceitem block ~75 ~17 ~41 slot.container 3 stained_glass 64 1
+			replaceitem block ~75 ~17 ~41 slot.container 4 planks 64 1
+			replaceitem block ~75 ~17 ~41 slot.container 5 wood 64 1
+			
 		setblock ~75 ~25 ~39    bed 3
 		setblock ~75 ~25 ~40    bed 3
+		setblock ~75 ~25 ~41    chest ["facing_direction": 4]
+			replaceitem block ~75 ~25 ~41 slot.container 0 netherite_sword 10 
+			replaceitem block ~75 ~25 ~41 slot.container 1 stained_glass 64 12
+			replaceitem block ~75 ~25 ~41 slot.container 2 stained_glass 64 9
+			replaceitem block ~75 ~25 ~41 slot.container 3 stained_glass 64 0
+			replaceitem block ~75 ~25 ~41 slot.container 4 planks 64 0
+			replaceitem block ~75 ~25 ~41 slot.container 5 wood 64 0
+
 
 		setblock ~75 ~33 ~39    bed 3
 		setblock ~75 ~33 ~40    bed 3
+		setblock ~75 ~33 ~41    chest ["facing_direction": 4]
+			replaceitem block ~75 ~33 ~41 slot.container 0 netherite_sword 10 
+			replaceitem block ~75 ~33 ~41 slot.container 1 stained_glass 64 11
+			replaceitem block ~75 ~33 ~41 slot.container 2 stained_glass 64 10
+			replaceitem block ~75 ~33 ~41 slot.container 3 stained_glass 64 2
+			replaceitem block ~75 ~33 ~41 slot.container 4 planks 64 2
+			replaceitem block ~75 ~33 ~41 slot.container 5 wood 64 2
 
 	# END: Western Tower
 
@@ -1660,10 +1736,43 @@ fill ~68 ~1 ~15 ~68 ~31 ~15 ochre_froglight
 		
 		# beds
 		fill ~39 ~1 ~75   ~40 ~1 ~75 bed 0
+		setblock ~41 ~1 ~75    chest ["facing_direction": 0]
+			replaceitem block ~41 ~1 ~75 slot.container 0 enchanted_golden_apple 64 
+			replaceitem block ~41 ~1 ~75 slot.container 1 arrow 64 
+			replaceitem block ~41 ~1 ~75 slot.container 2 crossbow 64 
+			replaceitem block ~41 ~1 ~75 slot.container 3 netherite_helmet 64 
+			replaceitem block ~41 ~1 ~75 slot.container 4 netherite_chestplate 64
+			replaceitem block ~41 ~1 ~75 slot.container 5 stone 64 0
+			
 		fill ~39 ~9 ~75   ~40 ~9 ~75 bed 0
+		setblock ~41 ~9 ~75    chest ["facing_direction": 0]
+			replaceitem block ~41 ~9 ~75 slot.container 0 netherite_sword 64 
+			replaceitem block ~41 ~9 ~75 slot.container 1 netherite_boots 64 
+			replaceitem block ~41 ~9 ~75 slot.container 2 stone 64 4
+			replaceitem block ~41 ~9 ~75 slot.container 3 stone 64 3
+			replaceitem block ~41 ~9 ~75 slot.container 4 stone 64 2
+			replaceitem block ~41 ~9 ~75 slot.container 5 stone 64 1
+		
 		fill ~39 ~17 ~75   ~40 ~17 ~75 bed 0
+		setblock ~41 ~17 ~75    chest ["facing_direction": 0]
+			replaceitem block ~41 ~17 ~75 slot.container 0 netherite_sword 64 
+			replaceitem block ~41 ~17 ~75 slot.container 1 netherite_chestplate 64 
+			replaceitem block ~41 ~17 ~75 slot.container 2 stone 64 2
+			replaceitem block ~41 ~17 ~75 slot.container 3 stone 64 1
+			replaceitem block ~41 ~17 ~75 slot.container 4 stone 64 6
+			replaceitem block ~41 ~17 ~75 slot.container 5 stone 64 5		
+		
 		fill ~39 ~25 ~75   ~40 ~25 ~75 bed 0
+		setblock ~41 ~25 ~75    chest ["facing_direction": 0]
+			replaceitem block ~41 ~25 ~75 slot.container 0 netherite_sword 64 
+			replaceitem block ~41 ~25 ~75 slot.container 1 netherite_helmet 64 
+			replaceitem block ~41 ~25 ~75 slot.container 2 shulker_box 4 0
+			
 		fill ~39 ~33 ~75   ~40 ~33 ~75 bed 0
+		setblock ~41 ~33 ~75    chest ["facing_direction": 0]
+			replaceitem block ~41 ~33 ~75 slot.container 0 netherite_sword 64 
+			replaceitem block ~41 ~33 ~75 slot.container 1 netherite_boots 64 
+			replaceitem block ~41 ~33 ~75 slot.container 2 shulker_box 4 2
 		
 	# END: Southern tower
 
@@ -1778,18 +1887,6 @@ fill ~68 ~1 ~15 ~68 ~31 ~15 ochre_froglight
 			# catch the  top 2 blocks
 			fill ~64 ~32 ~64    ~64 ~32 ~64 quartz_block
 			fill ~64 ~33 ~64    ~64 ~33 ~64 blackstone				
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 		# NW Tower	
@@ -4619,9 +4716,6 @@ summon squid ~42 ~36 ~53
 #END: Center SUITE roof floor
 
 
-
-
-
 # https://minecraft.fandom.com/wiki/Commands/place_(Bedrock_Edition)
 
 	# Dining
@@ -4665,13 +4759,10 @@ summon squid ~42 ~36 ~53
 
 		fill ~41 ~1 ~29		~44 ~1 ~29 granite_stairs 3
 		fill ~38 ~1 ~29		~35 ~1 ~29 granite_stairs 3
-
-		
-		
+			
 		fill ~41 ~1 ~31		~42 ~1 ~31 granite_stairs 3
 		fill ~38 ~1 ~31		~37 ~1 ~31 granite_stairs 3
-		
-		
+			
 		fill ~41 ~1 ~33		~44 ~1 ~33 granite_stairs 3
 		fill ~38 ~1 ~33		~35 ~1 ~33 granite_stairs 3
 
@@ -4763,13 +4854,11 @@ summon squid ~42 ~36 ~53
 					fill ~46 ~5 ~43		~43 ~7 ~43 leaves 2
 					fill ~46 ~5 ~47		~42 ~7 ~47 leaves 2
 
-
 				#Southern area
 					fill ~30 ~6 ~45		~49 ~7 ~45 leaves 2
 		
 			# NE Tree
-				fill ~34 ~1 ~34		~34 ~7 ~34 wood 0 
-				
+				fill ~34 ~1 ~34		~34 ~7 ~34 wood 0 			
 
 			# NW Tree
 				fill ~45 ~1 ~34		~45 ~7 ~34 wood 0 
@@ -4779,8 +4868,6 @@ summon squid ~42 ~36 ~53
 
 			# SW Tree
 				fill ~45 ~1 ~45		~45 ~7 ~45 wood 0 
-
-
 		
 		# END: Trees
 
@@ -4815,9 +4902,7 @@ summon squid ~42 ~36 ~53
 				fill ~34 ~1 ~15		~34 ~1 ~24 quartz_stairs 1
 				# fix the two non-stair corners
 				fill ~34 ~1 ~15		~34 ~1 ~15 quartz_block		
-				fill ~34 ~1 ~24		~34 ~1 ~24 quartz_block
-				
-				
+				fill ~34 ~1 ~24		~34 ~1 ~24 quartz_block		
 		
 			# box around pillar base NW
 				fill ~55 ~1 ~24		~45 ~1 ~15 grass
@@ -4835,8 +4920,7 @@ summon squid ~42 ~36 ~53
 				fill ~45 ~1 ~24		~45 ~1 ~15 quartz_stairs 0
 				# fix the two non-stair corners
 				fill ~45 ~1 ~15		~45 ~1 ~15 quartz_block
-				fill ~45 ~1 ~24		~45 ~1 ~24 quartz_block
-				
+				fill ~45 ~1 ~24		~45 ~1 ~24 quartz_block			
 			
 			# NE Trunk
 				fill ~28 ~2 ~19		~29 ~2 ~20 sapling 1
@@ -4860,8 +4944,7 @@ summon squid ~42 ~36 ~53
 		fill ~39 ~1 ~52		~40	~3 ~53 air 
 		
 		fill ~39 ~1 ~53		~39 ~1 ~53 quartz_stairs 1
-		fill ~39 ~2 ~53		~39 ~3 ~53 air
-		
+		fill ~39 ~2 ~53		~39 ~3 ~53 air	
 		
 		fill ~38 ~1 ~53		~38 ~1 ~54 quartz_block
 		fill ~38 ~2 ~53		~38 ~3 ~54 air
@@ -4962,19 +5045,2562 @@ summon squid ~42 ~36 ~53
 				fill ~45 ~4 ~53		~45 ~5 ~54 bookshelf
 				fill ~43 ~4 ~53		~43 ~4 ~53 enchanting_table
 				fill ~36 ~4 ~54		~36 ~4 ~54 lectern 0
-		# END: 
-		
+				summon villager "Maria Montessori" ~36 ~4 ~55
+		# END: Backdrop
 		
 #END:  Temple
 
-
-
 # /summon villager "Fred" ~1 ~0 ~1
-
 
 #https://minecraft.fandom.com/wiki/Item_Frame
 # frame - the setblock name for and item frame
 
-
 # things for loot crates
 # food - 
+
+
+
+# START: side suites
+
+	# START: First Floor
+	
+	#START: East SUITE first floor
+		# east wall, first row, other rows
+		fill ~15 ~1 ~35    ~15 ~1 ~44 cracked_polished_blackstone_bricks 
+		fill ~15 ~2 ~35    ~15 ~7 ~44 planks
+		fill ~15 ~4 ~35    ~15 ~4 ~44 cracked_polished_blackstone_bricks 
+	
+		# west wall, first row
+		fill ~24 ~1 ~35   ~24 ~1  ~44 cracked_polished_blackstone_bricks 
+		fill ~24 ~2 ~35   ~24 ~7  ~44 planks
+		fill ~24 ~4 ~35   ~24 ~4  ~44 cracked_polished_blackstone_bricks 
+		
+		# back wall, first row 45 is the back line
+		fill ~16 ~1 ~45		~23 ~1 ~45 cracked_polished_blackstone_bricks 
+		fill ~16 ~2 ~45		~23 ~7 ~45 planks
+		fill ~16 ~4 ~45		~23 ~4 ~45 cracked_polished_blackstone_bricks 
+		
+		# front wall, first row 34 is the front line
+		fill ~16 ~1 ~34		~23 ~1 ~34 cracked_polished_blackstone_bricks
+		fill ~16 ~2 ~34		~23 ~7 ~34 planks
+		fill ~16 ~4 ~34		~23 ~4 ~34 cracked_polished_blackstone_bricks
+
+		# second floor
+		fill ~16 ~4 ~35		~23 ~4 ~44 planks 2
+			
+		# beds
+			setblock ~19 ~5 ~44 bed 4 replace 
+			setblock ~20 ~5 ~44 bed 4 replace 
+			
+		# chests
+			setblock ~18 ~5 ~44 chest 2 replace 
+				replaceitem block ~18 ~5 ~44 slot.container 0 netherite_sword 10 
+				replaceitem block ~18 ~5 ~44 slot.container 1 netherite_chestplate 11
+				replaceitem block ~18 ~5 ~44 slot.container 2 netherite_helmet 12
+				replaceitem block ~18 ~5 ~44 slot.container 3 netherite_leggings 64
+				replaceitem block ~18 ~5 ~44 slot.container 4 netherite_boots 64
+				replaceitem block ~18 ~5 ~44 slot.container 5 netherite_pickaxe 64
+				replaceitem block ~18 ~5 ~44 slot.container 6 netherite_boots 64
+				replaceitem block ~18 ~5 ~44 slot.container 7 shield 2
+				replaceitem block ~18 ~5 ~44 slot.container 8 enchanted_golden_apple 64
+			
+			setblock ~21 ~5 ~44 chest 2 replace 
+				replaceitem block ~21 ~5 ~44 slot.container 0 netherite_sword 10 
+				replaceitem block ~21 ~5 ~44 slot.container 1 netherite_chestplate 11
+				replaceitem block ~21 ~5 ~44 slot.container 2 netherite_helmet 12
+				replaceitem block ~21 ~5 ~44 slot.container 3 netherite_leggings 64
+				replaceitem block ~21 ~5 ~44 slot.container 4 netherite_boots 64
+				replaceitem block ~21 ~5 ~44 slot.container 5 netherite_pickaxe 64
+				replaceitem block ~21 ~5 ~44 slot.container 6 netherite_boots 64
+				replaceitem block ~21 ~5 ~44 slot.container 7 shield 2
+				replaceitem block ~21 ~5 ~44 slot.container 8 enchanted_golden_apple 64	
+		
+		
+		# first floor windows
+			# back wall
+			fill ~16 ~3 ~45		~23 ~3 ~45 glass
+			fill ~16 ~6 ~45		~23 ~7 ~45 glass
+			# front wall
+			fill ~16 ~3 ~34		~23 ~3 ~34 glass
+			fill ~16 ~6 ~34		~23 ~7 ~34 glass
+			# west wall
+			fill ~24 ~3 ~35    ~24 ~3 ~44 glass
+			fill ~24 ~6 ~35    ~24 ~7 ~44 glass
+			# east wall
+			fill ~15 ~3 ~35    ~15 ~3 ~44 glass
+			fill ~15 ~6 ~35    ~15 ~7 ~44 glass
+				
+		#stairs
+			# opening
+			fill ~23 ~4 ~35    ~23 ~4 ~39 air
+			# supports
+			fill ~23 ~1 ~39    ~23 ~3 ~39 quartz_block
+			fill ~23 ~1 ~38    ~23 ~2 ~38 quartz_block
+			fill ~23 ~1 ~37    ~23 ~1 ~37 quartz_block
+			# steps
+			fill ~23 ~1 ~36    ~23 ~1 ~36 quartz_stairs 2
+			fill ~23 ~2 ~37    ~23 ~2 ~37 quartz_stairs 2
+			fill ~23 ~3 ~38    ~23 ~3 ~38 quartz_stairs 2
+			fill ~23 ~4 ~39    ~23 ~4 ~39 quartz_stairs 2
+
+		# front and back black decorations
+			fill ~19 ~1 ~34		~20 ~7 ~34 cracked_polished_blackstone_bricks
+			fill ~19 ~1 ~45		~20 ~7 ~45 cracked_polished_blackstone_bricks
+		# east an west black decorations
+			fill ~15 ~1 ~39    ~15 ~7 ~40 cracked_polished_blackstone_bricks
+			fill ~24 ~1 ~39    ~24 ~7 ~40 cracked_polished_blackstone_bricks
+			
+		# doors
+			setblock ~19 ~1 ~45  spruce_door ["direction": 3,"door_hinge_bit":false]
+			setblock ~20 ~1 ~45  spruce_door ["direction": 3,"door_hinge_bit":true]			
+
+			setblock ~19 ~1 ~34  spruce_door ["direction": 1,"door_hinge_bit":true]
+			setblock ~20 ~1 ~34  spruce_door ["direction": 1,"door_hinge_bit":false]			
+
+		# garden
+			fill ~18 ~1 ~35		~18 ~1 ~44 planks 2
+			fill ~16 ~1 ~35		~17 ~1 ~44 dirt
+			fill ~16 ~2 ~35		~17 ~2 ~44 azalea_leaves_flowered
+			
+		# table and benches
+			fill ~21 ~1 ~42		~23 ~1 ~42 planks 2			
+			fill ~22 ~3 ~42		~22 ~3 ~42 ochre_froglight
+			fill ~21 ~1 ~44		~23 ~1 ~44 granite_stairs 2
+			fill ~21 ~1 ~40		~23 ~1 ~40 granite_stairs 3
+			
+		# crafting table and supplies	
+			
+			setblock ~16 ~5 ~39 chest 2 replace	
+				replaceitem block ~16 ~5 ~39 slot.container 0 iron_ingot 20 
+				replaceitem block ~16 ~5 ~39 slot.container 1 diamond 10
+				replaceitem block ~16 ~5 ~39 slot.container 2 coal 64
+				replaceitem block ~16 ~5 ~39 slot.container 3 leather 64
+				replaceitem block ~16 ~5 ~39 slot.container 4 stone 64
+				replaceitem block ~16 ~5 ~39 slot.container 5 wood 64
+
+			setblock ~17 ~5 ~39 chest 2 replace	
+				replaceitem block ~17 ~5 ~39 slot.container 6 iron_ingot 20 
+				replaceitem block ~17 ~5 ~39 slot.container 7 diamond 10
+				replaceitem block ~17 ~5 ~39 slot.container 8 coal 64
+				replaceitem block ~17 ~5 ~39 slot.container 9 leather 64
+				replaceitem block ~17 ~5 ~39 slot.container 10 stone 64
+				replaceitem block ~17 ~5 ~39 slot.container 11 wood 64
+
+			setblock ~20 ~5 ~39 chest 2 replace 
+				replaceitem block ~20 ~5 ~39 slot.container 0 iron_ingot 20 
+				replaceitem block ~20 ~5 ~39 slot.container 1 diamond 10
+				replaceitem block ~20 ~5 ~39 slot.container 2 coal 64
+				replaceitem block ~20 ~5 ~39 slot.container 3 leather 64
+				replaceitem block ~20 ~5 ~39 slot.container 4 stick 64
+				replaceitem block ~20 ~5 ~39 slot.container 5 string 64	
+
+			setblock ~21 ~5 ~39 chest 2 replace 
+				replaceitem block ~21 ~5 ~39 slot.container 6 iron_ingot 20 
+				replaceitem block ~21 ~5 ~39 slot.container 7 diamond 10
+				replaceitem block ~21 ~5 ~39 slot.container 8 coal 64
+				replaceitem block ~21 ~5 ~39 slot.container 9 leather 64
+				replaceitem block ~21 ~5 ~39 slot.container 10 stick 64
+				replaceitem block ~21 ~5 ~39 slot.container 11 string 64			
+			fill ~22 ~5 ~35		~22 ~5 ~39 planks 2
+			
+			
+			
+			fill ~16 ~5 ~35   ~16 ~5 ~35 anvil
+			fill ~17 ~5 ~35   ~17 ~5 ~35 blast_furnace
+			fill ~18 ~5 ~35   ~18 ~5 ~35 grindstone
+			fill ~19 ~5 ~35   ~19 ~5 ~35 furnace
+			fill ~20 ~5 ~35   ~20 ~5 ~35 crafting_table
+			fill ~21 ~5 ~35   ~21 ~5 ~35 stonecutter_block
+
+			fill ~16 ~5 ~44		~17 ~5 ~44	bookshelf
+			fill ~17 ~5 ~42		~17 ~5 ~42	enchanting_table
+			fill ~22 ~5 ~44		~23 ~5 ~44	bookshelf
+
+
+			
+	#END: East SUITE first floor
+	
+
+	#START: West SUITE first floor
+		# east wall, first row, other rows
+		fill ~55 ~1 ~35    ~55 ~1 ~44 cracked_polished_blackstone_bricks 
+		fill ~55 ~2 ~35    ~55 ~7 ~44 planks
+		fill ~55 ~4 ~35    ~55 ~4 ~44 cracked_polished_blackstone_bricks 
+	
+		# west wall, first row
+		fill ~64 ~1 ~35   ~64 ~1  ~44 cracked_polished_blackstone_bricks 
+		fill ~64 ~2 ~35   ~64 ~7  ~44 planks
+		fill ~64 ~4 ~35   ~64 ~4  ~44 cracked_polished_blackstone_bricks 
+		
+		# back wall, first row 45 is the back line
+		fill ~56 ~1 ~45		~63 ~1 ~45 cracked_polished_blackstone_bricks 
+		fill ~56 ~2 ~45		~63 ~7 ~45 planks
+		fill ~56 ~4 ~45		~63 ~4 ~45 cracked_polished_blackstone_bricks 
+		
+		# front wall, first row 34 is the front line
+		fill ~56 ~1 ~34		~63 ~1 ~34 cracked_polished_blackstone_bricks
+		fill ~56 ~2 ~34		~63 ~7 ~34 planks
+		fill ~56 ~4 ~34		~63 ~4 ~34 cracked_polished_blackstone_bricks
+
+		# second floor
+		fill ~56 ~4 ~35		~63 ~4 ~44 planks 2
+
+		# beds
+			setblock ~59 ~5 ~44 bed 4 replace 
+			setblock ~60 ~5 ~44 bed 4 replace 
+			
+		# chests
+			setblock ~58 ~5 ~44 chest 2 replace 
+				replaceitem block ~58 ~5 ~44 slot.container 0 netherite_sword 10 
+				replaceitem block ~58 ~5 ~44 slot.container 1 netherite_chestplate 11
+				replaceitem block ~58 ~5 ~44 slot.container 2 netherite_helmet 12
+				replaceitem block ~58 ~5 ~44 slot.container 3 netherite_leggings 64
+				replaceitem block ~58 ~5 ~44 slot.container 4 netherite_boots 64
+				replaceitem block ~58 ~5 ~44 slot.container 5 netherite_pickaxe 64
+				replaceitem block ~58 ~5 ~44 slot.container 6 netherite_boots 64
+				replaceitem block ~58 ~5 ~44 slot.container 7 shield 2
+				replaceitem block ~58 ~5 ~44 slot.container 8 enchanted_golden_apple 64
+				
+			setblock ~61 ~5 ~44 chest 2 replace 
+				replaceitem block ~61 ~5 ~44 slot.container 0 netherite_sword 10 
+				replaceitem block ~61 ~5 ~44 slot.container 1 netherite_chestplate 11
+				replaceitem block ~61 ~5 ~44 slot.container 2 netherite_helmet 12
+				replaceitem block ~61 ~5 ~44 slot.container 3 netherite_leggings 64
+				replaceitem block ~61 ~5 ~44 slot.container 4 netherite_boots 64
+				replaceitem block ~61 ~5 ~44 slot.container 5 netherite_pickaxe 64
+				replaceitem block ~61 ~5 ~44 slot.container 6 netherite_boots 64
+				replaceitem block ~61 ~5 ~44 slot.container 7 shield 2
+				replaceitem block ~61 ~5 ~44 slot.container 8 enchanted_golden_apple 64	
+
+		
+		# first floor windows
+			# back wall
+			fill ~56 ~3 ~45		~63 ~3 ~45 glass
+			fill ~56 ~6 ~45		~63 ~7 ~45 glass
+			# front wall
+			fill ~56 ~3 ~34		~63 ~3 ~34 glass
+			fill ~56 ~6 ~34		~63 ~7 ~34 glass
+			# west wall
+			fill ~64 ~3 ~35    ~64 ~3 ~44 glass
+			fill ~64 ~6 ~35    ~64 ~7 ~44 glass
+			# east wall
+			fill ~55 ~3 ~35    ~55 ~3 ~44 glass
+			fill ~55 ~6 ~35    ~55 ~7 ~44 glass
+		
+		#stairs
+			# opening
+			fill ~63 ~4 ~35    ~63 ~4 ~39 air
+			# supports
+			fill ~63 ~1 ~39    ~63 ~3 ~39 quartz_block
+			fill ~63 ~1 ~38    ~63 ~2 ~38 quartz_block
+			fill ~63 ~1 ~37    ~63 ~1 ~37 quartz_block
+			# steps
+			fill ~63 ~1 ~36    ~63 ~1 ~36 quartz_stairs 2
+			fill ~63 ~2 ~37    ~63 ~2 ~37 quartz_stairs 2
+			fill ~63 ~3 ~38    ~63 ~3 ~38 quartz_stairs 2
+			fill ~63 ~4 ~39    ~63 ~4 ~39 quartz_stairs 2
+
+		# front and back black decorations
+			fill ~59 ~1 ~34		~60 ~7 ~34 cracked_polished_blackstone_bricks
+			fill ~59 ~1 ~45		~60 ~7 ~45 cracked_polished_blackstone_bricks
+		# east an west black decorations
+			fill ~55 ~1 ~39    ~55 ~7 ~40 cracked_polished_blackstone_bricks
+			fill ~64 ~1 ~39    ~64 ~7 ~40 cracked_polished_blackstone_bricks
+			
+		# doors
+			setblock ~59 ~1 ~45  spruce_door ["direction": 3,"door_hinge_bit":false]
+			setblock ~60 ~1 ~45  spruce_door ["direction": 3,"door_hinge_bit":true]			
+
+			setblock ~59 ~1 ~34  spruce_door ["direction": 1,"door_hinge_bit":true]
+			setblock ~60 ~1 ~34  spruce_door ["direction": 1,"door_hinge_bit":false]			
+
+		# garden
+			fill ~58 ~1 ~35		~58 ~1 ~44 planks 2
+			fill ~56 ~1 ~35		~57 ~1 ~44 dirt
+			fill ~56 ~2 ~35		~57 ~2 ~44 azalea_leaves_flowered
+
+		# table and benches
+			fill ~61 ~1 ~42		~63 ~1 ~42 planks 2			
+			fill ~62 ~3 ~42		~62 ~3 ~42 ochre_froglight
+			fill ~61 ~1 ~44		~63 ~1 ~44 granite_stairs 2
+			fill ~61 ~1 ~40		~63 ~1 ~40 granite_stairs 3
+			
+		# crafting table and supplies	
+			
+			setblock ~56 ~5 ~39 chest 2 replace	
+				replaceitem block ~56 ~5 ~39 slot.container 0 iron_ingot 20 
+				replaceitem block ~56 ~5 ~39 slot.container 1 diamond 10
+				replaceitem block ~56 ~5 ~39 slot.container 2 coal 64
+				replaceitem block ~56 ~5 ~39 slot.container 3 leather 64
+				replaceitem block ~56 ~5 ~39 slot.container 4 stone 64
+				replaceitem block ~56 ~5 ~39 slot.container 5 wood 64
+
+			setblock ~57 ~5 ~39 chest 2 replace	
+				replaceitem block ~57 ~5 ~39 slot.container 6 iron_ingot 20 
+				replaceitem block ~57 ~5 ~39 slot.container 7 diamond 10
+				replaceitem block ~57 ~5 ~39 slot.container 8 coal 64
+				replaceitem block ~57 ~5 ~39 slot.container 9 leather 64
+				replaceitem block ~57 ~5 ~39 slot.container 10 stone 64
+				replaceitem block ~57 ~5 ~39 slot.container 11 wood 64
+
+			setblock ~60 ~5 ~39 chest 2 replace 
+				replaceitem block ~60 ~5 ~39 slot.container 0 iron_ingot 20 
+				replaceitem block ~60 ~5 ~39 slot.container 1 diamond 10
+				replaceitem block ~60 ~5 ~39 slot.container 2 coal 64
+				replaceitem block ~60 ~5 ~39 slot.container 3 leather 64
+				replaceitem block ~60 ~5 ~39 slot.container 4 stick 64
+				replaceitem block ~60 ~5 ~39 slot.container 5 string 64	
+
+			setblock ~61 ~5 ~39 chest 2 replace 
+				replaceitem block ~61 ~5 ~39 slot.container 6 iron_ingot 20 
+				replaceitem block ~61 ~5 ~39 slot.container 7 diamond 10
+				replaceitem block ~61 ~5 ~39 slot.container 8 coal 64
+				replaceitem block ~61 ~5 ~39 slot.container 9 leather 64
+				replaceitem block ~61 ~5 ~39 slot.container 10 stick 64
+				replaceitem block ~61 ~5 ~39 slot.container 11 string 64			
+			fill ~62 ~5 ~35		~62 ~5 ~39 planks 2
+
+			
+			fill ~56 ~5 ~35   ~56 ~5 ~35 anvil
+			fill ~57 ~5 ~35   ~57 ~5 ~35 blast_furnace
+			fill ~58 ~5 ~35   ~58 ~5 ~35 grindstone
+			fill ~59 ~5 ~35   ~59 ~5 ~35 furnace
+			fill ~60 ~5 ~35   ~60 ~5 ~35 crafting_table
+			fill ~61 ~5 ~35   ~61 ~5 ~35 stonecutter_block
+
+			fill ~56 ~5 ~44		~57 ~5 ~44	bookshelf
+			fill ~57 ~5 ~42		~57 ~5 ~42	enchanting_table
+			fill ~62 ~5 ~44		~63 ~5 ~44	bookshelf
+
+		
+		# END: West suite first floor
+	
+	
+
+	#END: First Floor
+
+
+
+
+
+	# START: Second Floor
+	
+	#START: East SUITE Second floor
+		# east wall, first row, other rows
+		fill ~15 ~9 ~35    ~15 ~9 ~44 cracked_polished_blackstone_bricks 
+		fill ~15 ~10 ~35    ~15 ~15 ~44 planks
+		fill ~15 ~12 ~35    ~15 ~12 ~44 cracked_polished_blackstone_bricks 
+	
+		# west wall, first row
+		fill ~24 ~9 ~35   ~24 ~9  ~44 cracked_polished_blackstone_bricks 
+		fill ~24 ~10 ~35   ~24 ~15  ~44 planks
+		fill ~24 ~12 ~35   ~24 ~12  ~44 cracked_polished_blackstone_bricks 
+		
+		# back wall, first row 45 is the back line
+		fill ~16 ~9 ~45		~23 ~9 ~45 cracked_polished_blackstone_bricks 
+		fill ~16 ~10 ~45		~23 ~15 ~45 planks
+		fill ~16 ~12 ~45		~23 ~12 ~45 cracked_polished_blackstone_bricks 
+		
+		# front wall, first row 34 is the front line
+		fill ~16 ~9 ~34		~23 ~9 ~34 cracked_polished_blackstone_bricks
+		fill ~16 ~10 ~34		~23 ~15 ~34 planks
+		fill ~16 ~12 ~34		~23 ~12 ~34 cracked_polished_blackstone_bricks
+
+		# second floor
+		fill ~16 ~12 ~35		~23 ~12 ~44 planks 2
+			
+		# beds
+			setblock ~19 ~13 ~44 bed 4 replace 
+			setblock ~20 ~13 ~44 bed 4 replace 
+			
+		# chests
+			setblock ~18 ~13 ~44 chest 2 replace 
+				replaceitem block ~18 ~13 ~44 slot.container 0 netherite_sword 10 
+				replaceitem block ~18 ~13 ~44 slot.container 1 netherite_chestplate 11
+				replaceitem block ~18 ~13 ~44 slot.container 2 netherite_helmet 12
+				replaceitem block ~18 ~13 ~44 slot.container 3 netherite_leggings 64
+				replaceitem block ~18 ~13 ~44 slot.container 4 netherite_boots 64
+				replaceitem block ~18 ~13 ~44 slot.container 5 netherite_pickaxe 64
+				replaceitem block ~18 ~13 ~44 slot.container 6 netherite_boots 64
+				replaceitem block ~18 ~13 ~44 slot.container 7 shield 2
+				replaceitem block ~18 ~13 ~44 slot.container 8 enchanted_golden_apple 64
+			
+			setblock ~21 ~13 ~44 chest 2 replace 
+				replaceitem block ~21 ~13 ~44 slot.container 0 netherite_sword 10 
+				replaceitem block ~21 ~13 ~44 slot.container 1 netherite_chestplate 11
+				replaceitem block ~21 ~13 ~44 slot.container 2 netherite_helmet 12
+				replaceitem block ~21 ~13 ~44 slot.container 3 netherite_leggings 64
+				replaceitem block ~21 ~13 ~44 slot.container 4 netherite_boots 64
+				replaceitem block ~21 ~13 ~44 slot.container 5 netherite_pickaxe 64
+				replaceitem block ~21 ~13 ~44 slot.container 6 netherite_boots 64
+				replaceitem block ~21 ~13 ~44 slot.container 7 shield 2
+				replaceitem block ~21 ~13 ~44 slot.container 8 enchanted_golden_apple 64	
+		
+		
+		# first floor windows
+			# back wall
+			fill ~16 ~11 ~45		~23 ~11 ~45 glass
+			fill ~16 ~14 ~45		~23 ~15 ~45 glass
+			# front wall
+			fill ~16 ~11 ~34		~23 ~11 ~34 glass
+			fill ~16 ~14 ~34		~23 ~15 ~34 glass
+			# west wall
+			fill ~24 ~11 ~35    ~24 ~11 ~44 glass
+			fill ~24 ~14 ~35    ~24 ~15 ~44 glass
+			# east wall
+			fill ~15 ~11 ~35    ~15 ~11 ~44 glass
+			fill ~15 ~14 ~35    ~15 ~15 ~44 glass
+				
+		#stairs
+			# opening
+			fill ~23 ~12 ~35    ~23 ~12 ~39 air
+			# supports
+			fill ~23 ~9 ~39    ~23 ~11 ~39 quartz_block
+			fill ~23 ~9 ~38    ~23 ~10 ~38 quartz_block
+			fill ~23 ~9 ~37    ~23 ~9 ~37 quartz_block
+			# steps
+			fill ~23 ~9 ~36    ~23 ~9 ~36 quartz_stairs 2
+			fill ~23 ~10 ~37    ~23 ~10 ~37 quartz_stairs 2
+			fill ~23 ~11 ~38    ~23 ~11 ~38 quartz_stairs 2
+			fill ~23 ~12 ~39    ~23 ~12 ~39 quartz_stairs 2
+
+		# front and back black decorations
+			fill ~19 ~9 ~34		~20 ~15 ~34 cracked_polished_blackstone_bricks
+			fill ~19 ~9 ~45		~20 ~15 ~45 cracked_polished_blackstone_bricks
+		# east an west black decorations
+			fill ~15 ~9 ~39    ~15 ~15 ~40 cracked_polished_blackstone_bricks
+			fill ~24 ~9 ~39    ~24 ~15 ~40 cracked_polished_blackstone_bricks
+			
+		# doors
+			setblock ~19 ~9 ~45  spruce_door ["direction": 3,"door_hinge_bit":false]
+			setblock ~20 ~9 ~45  spruce_door ["direction": 3,"door_hinge_bit":true]			
+
+			setblock ~19 ~9 ~34  spruce_door ["direction": 1,"door_hinge_bit":true]
+			setblock ~20 ~9 ~34  spruce_door ["direction": 1,"door_hinge_bit":false]			
+
+		# garden
+			fill ~18 ~9 ~35		~18 ~9 ~44 planks 2
+			fill ~16 ~9 ~35		~17 ~9 ~44 dirt
+			fill ~16 ~10 ~35		~17 ~10 ~44 azalea_leaves_flowered
+			
+		# table and benches
+			fill ~21 ~9 ~42		~23 ~9 ~42 planks 2			
+			fill ~22 ~11 ~42		~22 ~11 ~42 ochre_froglight
+			fill ~21 ~9 ~44		~23 ~9 ~44 granite_stairs 2
+			fill ~21 ~9 ~40		~23 ~9 ~40 granite_stairs 3
+			
+		# crafting table and supplies	
+			
+			setblock ~16 ~13 ~39 chest 2 replace	
+				replaceitem block ~16 ~13 ~39 slot.container 0 iron_ingot 20 
+				replaceitem block ~16 ~13 ~39 slot.container 1 diamond 10
+				replaceitem block ~16 ~13 ~39 slot.container 2 coal 64
+				replaceitem block ~16 ~13 ~39 slot.container 3 leather 64
+				replaceitem block ~16 ~13 ~39 slot.container 4 stone 64
+				replaceitem block ~16 ~13 ~39 slot.container 5 wood 64
+
+			setblock ~17 ~13 ~39 chest 2 replace	
+				replaceitem block ~17 ~13 ~39 slot.container 6 iron_ingot 20 
+				replaceitem block ~17 ~13 ~39 slot.container 7 diamond 10
+				replaceitem block ~17 ~13 ~39 slot.container 8 coal 64
+				replaceitem block ~17 ~13 ~39 slot.container 9 leather 64
+				replaceitem block ~17 ~13 ~39 slot.container 10 stone 64
+				replaceitem block ~17 ~13 ~39 slot.container 11 wood 64
+
+			setblock ~20 ~13 ~39 chest 2 replace 
+				replaceitem block ~20 ~13 ~39 slot.container 0 iron_ingot 20 
+				replaceitem block ~20 ~13 ~39 slot.container 1 diamond 10
+				replaceitem block ~20 ~13 ~39 slot.container 2 coal 64
+				replaceitem block ~20 ~13 ~39 slot.container 3 leather 64
+				replaceitem block ~20 ~13 ~39 slot.container 4 stick 64
+				replaceitem block ~20 ~13 ~39 slot.container 5 string 64	
+
+			setblock ~21 ~13 ~39 chest 2 replace 
+				replaceitem block ~21 ~13 ~39 slot.container 6 iron_ingot 20 
+				replaceitem block ~21 ~13 ~39 slot.container 7 diamond 10
+				replaceitem block ~21 ~13 ~39 slot.container 8 coal 64
+				replaceitem block ~21 ~13 ~39 slot.container 9 leather 64
+				replaceitem block ~21 ~13 ~39 slot.container 10 stick 64
+				replaceitem block ~21 ~13 ~39 slot.container 11 string 64			
+			fill ~22 ~13 ~35		~22 ~13 ~39 planks 2
+			
+			
+			fill ~16 ~13 ~35   ~16 ~13 ~35 anvil
+			fill ~17 ~13 ~35   ~17 ~13 ~35 blast_furnace
+			fill ~18 ~13 ~35   ~18 ~13 ~35 grindstone
+			fill ~19 ~13 ~35   ~19 ~13 ~35 furnace
+			fill ~20 ~13 ~35   ~20 ~13 ~35 crafting_table
+			fill ~21 ~13 ~35   ~21 ~13 ~35 stonecutter_block
+
+			fill ~16 ~13 ~44		~17 ~13 ~44	bookshelf
+			fill ~17 ~13 ~42		~17 ~13 ~42	enchanting_table
+			fill ~22 ~13 ~44		~23 ~13 ~44	bookshelf
+
+
+			
+	#END: East SUITE Second floor
+	
+
+	#START: West SUITE Second floor
+		# east wall, first row, other rows
+		fill ~55 ~9 ~35    ~55 ~9 ~44 cracked_polished_blackstone_bricks 
+		fill ~55 ~10 ~35    ~55 ~15 ~44 planks
+		fill ~55 ~12 ~35    ~55 ~12 ~44 cracked_polished_blackstone_bricks 
+	
+		# west wall, first row
+		fill ~64 ~9 ~35   ~64 ~9  ~44 cracked_polished_blackstone_bricks 
+		fill ~64 ~10 ~35   ~64 ~15  ~44 planks
+		fill ~64 ~12 ~35   ~64 ~12  ~44 cracked_polished_blackstone_bricks 
+		
+		# back wall, first row 45 is the back line
+		fill ~56 ~9 ~45		~63 ~9 ~45 cracked_polished_blackstone_bricks 
+		fill ~56 ~10 ~45		~63 ~15 ~45 planks
+		fill ~56 ~12 ~45		~63 ~12 ~45 cracked_polished_blackstone_bricks 
+		
+		# front wall, first row 34 is the front line
+		fill ~56 ~9 ~34		~63 ~9 ~34 cracked_polished_blackstone_bricks
+		fill ~56 ~10 ~34		~63 ~15 ~34 planks
+		fill ~56 ~12 ~34		~63 ~12 ~34 cracked_polished_blackstone_bricks
+
+		# second floor
+		fill ~56 ~12 ~35		~63 ~12 ~44 planks 2
+
+		# beds
+			setblock ~59 ~13 ~44 bed 4 replace 
+			setblock ~60 ~13 ~44 bed 4 replace 
+			
+		# chests
+			setblock ~58 ~13 ~44 chest 2 replace 
+				replaceitem block ~58 ~13 ~44 slot.container 0 netherite_sword 10 
+				replaceitem block ~58 ~13 ~44 slot.container 1 netherite_chestplate 11
+				replaceitem block ~58 ~13 ~44 slot.container 2 netherite_helmet 12
+				replaceitem block ~58 ~13 ~44 slot.container 3 netherite_leggings 64
+				replaceitem block ~58 ~13 ~44 slot.container 4 netherite_boots 64
+				replaceitem block ~58 ~13 ~44 slot.container 5 netherite_pickaxe 64
+				replaceitem block ~58 ~13 ~44 slot.container 6 netherite_boots 64
+				replaceitem block ~58 ~13 ~44 slot.container 7 shield 2
+				replaceitem block ~58 ~13 ~44 slot.container 8 enchanted_golden_apple 64
+				
+			setblock ~61 ~13 ~44 chest 2 replace 
+				replaceitem block ~61 ~13 ~44 slot.container 0 netherite_sword 10 
+				replaceitem block ~61 ~13 ~44 slot.container 1 netherite_chestplate 11
+				replaceitem block ~61 ~13 ~44 slot.container 2 netherite_helmet 12
+				replaceitem block ~61 ~13 ~44 slot.container 3 netherite_leggings 64
+				replaceitem block ~61 ~13 ~44 slot.container 4 netherite_boots 64
+				replaceitem block ~61 ~13 ~44 slot.container 5 netherite_pickaxe 64
+				replaceitem block ~61 ~13 ~44 slot.container 6 netherite_boots 64
+				replaceitem block ~61 ~13 ~44 slot.container 7 shield 2
+				replaceitem block ~61 ~13 ~44 slot.container 8 enchanted_golden_apple 64	
+
+		
+		# first floor windows
+			# back wall
+			fill ~56 ~11 ~45		~63 ~11 ~45 glass
+			fill ~56 ~14 ~45		~63 ~15 ~45 glass
+			# front wall
+			fill ~56 ~11 ~34		~63 ~11 ~34 glass
+			fill ~56 ~14 ~34		~63 ~15 ~34 glass
+			# west wall
+			fill ~64 ~11 ~35    ~64 ~11 ~44 glass
+			fill ~64 ~14 ~35    ~64 ~15 ~44 glass
+			# east wall
+			fill ~55 ~11 ~35    ~55 ~11 ~44 glass
+			fill ~55 ~14 ~35    ~55 ~15 ~44 glass
+		
+		#stairs
+			# opening
+			fill ~63 ~12 ~35    ~63 ~12 ~39 air
+			# supports
+			fill ~63 ~9 ~39    ~63 ~11 ~39 quartz_block
+			fill ~63 ~9 ~38    ~63 ~10 ~38 quartz_block
+			fill ~63 ~9 ~37    ~63 ~9 ~37 quartz_block
+			# steps
+			fill ~63 ~9 ~36    ~63 ~9 ~36 quartz_stairs 2
+			fill ~63 ~10 ~37    ~63 ~10 ~37 quartz_stairs 2
+			fill ~63 ~11 ~38    ~63 ~11 ~38 quartz_stairs 2
+			fill ~63 ~12 ~39    ~63 ~12 ~39 quartz_stairs 2
+
+		# front and back black decorations
+			fill ~59 ~9 ~34		~60 ~15 ~34 cracked_polished_blackstone_bricks
+			fill ~59 ~9 ~45		~60 ~15 ~45 cracked_polished_blackstone_bricks
+		# east an west black decorations
+			fill ~55 ~9 ~39    ~55 ~15 ~40 cracked_polished_blackstone_bricks
+			fill ~64 ~9 ~39    ~64 ~15 ~40 cracked_polished_blackstone_bricks
+			
+		# doors
+			setblock ~59 ~9 ~45  spruce_door ["direction": 3,"door_hinge_bit":false]
+			setblock ~60 ~9 ~45  spruce_door ["direction": 3,"door_hinge_bit":true]			
+
+			setblock ~59 ~9 ~34  spruce_door ["direction": 1,"door_hinge_bit":true]
+			setblock ~60 ~9 ~34  spruce_door ["direction": 1,"door_hinge_bit":false]			
+
+		# garden
+			fill ~58 ~9 ~35		~58 ~9 ~44 planks 2
+			fill ~56 ~9 ~35		~57 ~9 ~44 dirt
+			fill ~56 ~10 ~35		~57 ~10 ~44 azalea_leaves_flowered
+
+		# table and benches
+			fill ~61 ~9 ~42		~63 ~9 ~42 planks 2			
+			fill ~62 ~11 ~42		~62 ~11 ~42 ochre_froglight
+			fill ~61 ~9 ~44		~63 ~9 ~44 granite_stairs 2
+			fill ~61 ~9 ~40		~63 ~9 ~40 granite_stairs 3
+			
+		# crafting table and supplies	
+			
+			setblock ~56 ~13 ~39 chest 2 replace	
+				replaceitem block ~56 ~13 ~39 slot.container 0 iron_ingot 20 
+				replaceitem block ~56 ~13 ~39 slot.container 1 diamond 10
+				replaceitem block ~56 ~13 ~39 slot.container 2 coal 64
+				replaceitem block ~56 ~13 ~39 slot.container 3 leather 64
+				replaceitem block ~56 ~13 ~39 slot.container 4 stone 64
+				replaceitem block ~56 ~13 ~39 slot.container 5 wood 64
+
+			setblock ~57 ~13 ~39 chest 2 replace	
+				replaceitem block ~57 ~13 ~39 slot.container 6 iron_ingot 20 
+				replaceitem block ~57 ~13 ~39 slot.container 7 diamond 10
+				replaceitem block ~57 ~13 ~39 slot.container 8 coal 64
+				replaceitem block ~57 ~13 ~39 slot.container 9 leather 64
+				replaceitem block ~57 ~13 ~39 slot.container 10 stone 64
+				replaceitem block ~57 ~13 ~39 slot.container 11 wood 64
+
+			setblock ~60 ~13 ~39 chest 2 replace 
+				replaceitem block ~60 ~13 ~39 slot.container 0 iron_ingot 20 
+				replaceitem block ~60 ~13 ~39 slot.container 1 diamond 10
+				replaceitem block ~60 ~13 ~39 slot.container 2 coal 64
+				replaceitem block ~60 ~13 ~39 slot.container 3 leather 64
+				replaceitem block ~60 ~13 ~39 slot.container 4 stick 64
+				replaceitem block ~60 ~13 ~39 slot.container 5 string 64	
+
+			setblock ~61 ~13 ~39 chest 2 replace 
+				replaceitem block ~61 ~13 ~39 slot.container 6 iron_ingot 20 
+				replaceitem block ~61 ~13 ~39 slot.container 7 diamond 10
+				replaceitem block ~61 ~13 ~39 slot.container 8 coal 64
+				replaceitem block ~61 ~13 ~39 slot.container 9 leather 64
+				replaceitem block ~61 ~13 ~39 slot.container 10 stick 64
+				replaceitem block ~61 ~13 ~39 slot.container 11 string 64			
+
+			
+			
+			fill ~56 ~13 ~35   ~56 ~13 ~35 anvil
+			fill ~57 ~13 ~35   ~57 ~13 ~35 blast_furnace
+			fill ~58 ~13 ~35   ~58 ~13 ~35 grindstone
+			fill ~59 ~13 ~35   ~59 ~13 ~35 furnace
+			fill ~60 ~13 ~35   ~60 ~13 ~35 crafting_table
+			fill ~61 ~13 ~35   ~61 ~13 ~35 stonecutter_block
+
+			fill ~56 ~13 ~44		~57 ~13 ~44	bookshelf
+			fill ~57 ~13 ~42		~57 ~13 ~42	enchanting_table
+			fill ~62 ~13 ~44		~63 ~13 ~44	bookshelf
+
+		
+		# END: West suite Second floor
+	
+	
+
+	#END: Second Floor
+
+
+	# START: third Floor
+	
+	#START: East SUITE third floor
+		# east wall, first row, other rows
+		fill ~15 ~17 ~35    ~15 ~17 ~44 cracked_polished_blackstone_bricks 
+		fill ~15 ~18 ~35    ~15 ~23 ~44 planks
+		fill ~15 ~20 ~35    ~15 ~20 ~44 cracked_polished_blackstone_bricks 
+	
+		# west wall, first row
+		fill ~24 ~17 ~35   ~24 ~17  ~44 cracked_polished_blackstone_bricks 
+		fill ~24 ~18 ~35   ~24 ~23  ~44 planks
+		fill ~24 ~20 ~35   ~24 ~20  ~44 cracked_polished_blackstone_bricks 
+		
+		# back wall, first row 45 is the back line
+		fill ~16 ~17 ~45		~23 ~17 ~45 cracked_polished_blackstone_bricks 
+		fill ~16 ~18 ~45		~23 ~23 ~45 planks
+		fill ~16 ~20 ~45		~23 ~20 ~45 cracked_polished_blackstone_bricks 
+		
+		# front wall, first row 34 is the front line
+		fill ~16 ~17 ~34		~23 ~17 ~34 cracked_polished_blackstone_bricks
+		fill ~16 ~18 ~34		~23 ~23 ~34 planks
+		fill ~16 ~20 ~34		~23 ~20 ~34 cracked_polished_blackstone_bricks
+
+		# second floor
+		fill ~16 ~20 ~35		~23 ~20 ~44 planks 2
+			
+		# beds
+			setblock ~19 ~21 ~44 bed 4 replace 
+			setblock ~20 ~21 ~44 bed 4 replace 
+			
+		# chests
+			setblock ~18 ~21 ~44 chest 2 replace 
+				replaceitem block ~18 ~21 ~44 slot.container 0 netherite_sword 10 
+				replaceitem block ~18 ~21 ~44 slot.container 1 netherite_chestplate 11
+				replaceitem block ~18 ~21 ~44 slot.container 2 netherite_helmet 12
+				replaceitem block ~18 ~21 ~44 slot.container 3 netherite_leggings 64
+				replaceitem block ~18 ~21 ~44 slot.container 4 netherite_boots 64
+				replaceitem block ~18 ~21 ~44 slot.container 5 netherite_pickaxe 64
+				replaceitem block ~18 ~21 ~44 slot.container 6 netherite_boots 64
+				replaceitem block ~18 ~21 ~44 slot.container 7 shield 2
+				replaceitem block ~18 ~21 ~44 slot.container 8 enchanted_golden_apple 64
+			
+			setblock ~21 ~21 ~44 chest 2 replace 
+				replaceitem block ~21 ~21 ~44 slot.container 0 netherite_sword 10 
+				replaceitem block ~21 ~21 ~44 slot.container 1 netherite_chestplate 11
+				replaceitem block ~21 ~21 ~44 slot.container 2 netherite_helmet 12
+				replaceitem block ~21 ~21 ~44 slot.container 3 netherite_leggings 64
+				replaceitem block ~21 ~21 ~44 slot.container 4 netherite_boots 64
+				replaceitem block ~21 ~21 ~44 slot.container 5 netherite_pickaxe 64
+				replaceitem block ~21 ~21 ~44 slot.container 6 netherite_boots 64
+				replaceitem block ~21 ~21 ~44 slot.container 7 shield 2
+				replaceitem block ~21 ~21 ~44 slot.container 8 enchanted_golden_apple 64	
+		
+		
+		# first floor windows
+			# back wall
+			fill ~16 ~19 ~45		~23 ~19 ~45 glass
+			fill ~16 ~22 ~45		~23 ~23 ~45 glass
+			# front wall
+			fill ~16 ~19 ~34		~23 ~19 ~34 glass
+			fill ~16 ~22 ~34		~23 ~23 ~34 glass
+			# west wall
+			fill ~24 ~19 ~35    ~24 ~19 ~44 glass
+			fill ~24 ~22 ~35    ~24 ~23 ~44 glass
+			# east wall
+			fill ~15 ~19 ~35    ~15 ~19 ~44 glass
+			fill ~15 ~22 ~35    ~15 ~23 ~44 glass
+				
+		#stairs
+			# opening
+			fill ~23 ~20 ~35    ~23 ~20 ~39 air
+			# supports
+			fill ~23 ~17 ~39    ~23 ~19 ~39 quartz_block
+			fill ~23 ~17 ~38    ~23 ~18 ~38 quartz_block
+			fill ~23 ~17 ~37    ~23 ~17 ~37 quartz_block
+			# steps
+			fill ~23 ~17 ~36    ~23 ~17 ~36 quartz_stairs 2
+			fill ~23 ~18 ~37    ~23 ~18 ~37 quartz_stairs 2
+			fill ~23 ~19 ~38    ~23 ~19 ~38 quartz_stairs 2
+			fill ~23 ~20 ~39    ~23 ~20 ~39 quartz_stairs 2
+
+		# front and back black decorations
+			fill ~19 ~17 ~34		~20 ~23 ~34 cracked_polished_blackstone_bricks
+			fill ~19 ~17 ~45		~20 ~23 ~45 cracked_polished_blackstone_bricks
+		# east an west black decorations
+			fill ~15 ~17 ~39    ~15 ~23 ~40 cracked_polished_blackstone_bricks
+			fill ~24 ~17 ~39    ~24 ~23 ~40 cracked_polished_blackstone_bricks
+			
+		# doors
+			setblock ~19 ~17 ~45  spruce_door ["direction": 3,"door_hinge_bit":false]
+			setblock ~20 ~17 ~45  spruce_door ["direction": 3,"door_hinge_bit":true]			
+
+			setblock ~19 ~17 ~34  spruce_door ["direction": 1,"door_hinge_bit":true]
+			setblock ~20 ~17 ~34  spruce_door ["direction": 1,"door_hinge_bit":false]			
+
+		# garden
+			fill ~18 ~17 ~35		~18 ~17 ~44 planks 2
+			fill ~16 ~17 ~35		~17 ~17 ~44 dirt
+			fill ~16 ~18 ~35		~17 ~18 ~44 azalea_leaves_flowered
+			
+		# table and benches
+			fill ~21 ~17 ~42		~23 ~17 ~42 planks 2			
+			fill ~22 ~19 ~42		~22 ~19 ~42 ochre_froglight
+			fill ~21 ~17 ~44		~23 ~17 ~44 granite_stairs 2
+			fill ~21 ~17 ~40		~23 ~17 ~40 granite_stairs 3
+			
+		# crafting table and supplies	
+			
+			setblock ~16 ~21 ~39 chest 2 replace	
+				replaceitem block ~16 ~21 ~39 slot.container 0 iron_ingot 20 
+				replaceitem block ~16 ~21 ~39 slot.container 1 diamond 10
+				replaceitem block ~16 ~21 ~39 slot.container 2 coal 64
+				replaceitem block ~16 ~21 ~39 slot.container 3 leather 64
+				replaceitem block ~16 ~21 ~39 slot.container 4 stone 64
+				replaceitem block ~16 ~21 ~39 slot.container 5 wood 64
+
+			setblock ~17 ~21 ~39 chest 2 replace	
+				replaceitem block ~17 ~21 ~39 slot.container 6 iron_ingot 20 
+				replaceitem block ~17 ~21 ~39 slot.container 7 diamond 10
+				replaceitem block ~17 ~21 ~39 slot.container 8 coal 64
+				replaceitem block ~17 ~21 ~39 slot.container 9 leather 64
+				replaceitem block ~17 ~21 ~39 slot.container 10 stone 64
+				replaceitem block ~17 ~21 ~39 slot.container 11 wood 64
+
+			setblock ~20 ~21 ~39 chest 2 replace 
+				replaceitem block ~20 ~21 ~39 slot.container 0 iron_ingot 20 
+				replaceitem block ~20 ~21 ~39 slot.container 1 diamond 10
+				replaceitem block ~20 ~21 ~39 slot.container 2 coal 64
+				replaceitem block ~20 ~21 ~39 slot.container 3 leather 64
+				replaceitem block ~20 ~21 ~39 slot.container 4 stick 64
+				replaceitem block ~20 ~21 ~39 slot.container 5 string 64	
+
+			setblock ~21 ~21 ~39 chest 2 replace 
+				replaceitem block ~21 ~21 ~39 slot.container 6 iron_ingot 20 
+				replaceitem block ~21 ~21 ~39 slot.container 7 diamond 10
+				replaceitem block ~21 ~21 ~39 slot.container 8 coal 64
+				replaceitem block ~21 ~21 ~39 slot.container 9 leather 64
+				replaceitem block ~21 ~21 ~39 slot.container 10 stick 64
+				replaceitem block ~21 ~21 ~39 slot.container 11 string 64			
+			fill ~22 ~21 ~35		~22 ~21 ~39 planks 2
+
+			
+			
+			fill ~16 ~21 ~35   ~16 ~21 ~35 anvil
+			fill ~17 ~21 ~35   ~17 ~21 ~35 blast_furnace
+			fill ~18 ~21 ~35   ~18 ~21 ~35 grindstone
+			fill ~19 ~21 ~35   ~19 ~21 ~35 furnace
+			fill ~20 ~21 ~35   ~20 ~21 ~35 crafting_table
+			fill ~21 ~21 ~35   ~21 ~21 ~35 stonecutter_block
+
+			fill ~16 ~21 ~44		~17 ~21 ~44	bookshelf
+			fill ~17 ~21 ~42		~17 ~21 ~42	enchanting_table
+			fill ~22 ~21 ~44		~23 ~21 ~44	bookshelf
+
+
+			
+	#END: East SUITE third floor
+	
+
+	#START: West SUITE third floor
+		# east wall, first row, other rows
+		fill ~55 ~17 ~35    ~55 ~17 ~44 cracked_polished_blackstone_bricks 
+		fill ~55 ~18 ~35    ~55 ~23 ~44 planks
+		fill ~55 ~20 ~35    ~55 ~20 ~44 cracked_polished_blackstone_bricks 
+	
+		# west wall, first row
+		fill ~64 ~17 ~35   ~64 ~17  ~44 cracked_polished_blackstone_bricks 
+		fill ~64 ~18 ~35   ~64 ~23  ~44 planks
+		fill ~64 ~20 ~35   ~64 ~20  ~44 cracked_polished_blackstone_bricks 
+		
+		# back wall, first row 45 is the back line
+		fill ~56 ~17 ~45		~63 ~17 ~45 cracked_polished_blackstone_bricks 
+		fill ~56 ~18 ~45		~63 ~23 ~45 planks
+		fill ~56 ~20 ~45		~63 ~20 ~45 cracked_polished_blackstone_bricks 
+		
+		# front wall, first row 34 is the front line
+		fill ~56 ~17 ~34		~63 ~17 ~34 cracked_polished_blackstone_bricks
+		fill ~56 ~18 ~34		~63 ~23 ~34 planks
+		fill ~56 ~20 ~34		~63 ~20 ~34 cracked_polished_blackstone_bricks
+
+		# second floor
+		fill ~56 ~20 ~35		~63 ~20 ~44 planks 2
+
+		# beds
+			setblock ~59 ~21 ~44 bed 4 replace 
+			setblock ~60 ~21 ~44 bed 4 replace 
+			
+		# chests
+			setblock ~58 ~21 ~44 chest 2 replace 
+				replaceitem block ~58 ~21 ~44 slot.container 0 netherite_sword 10 
+				replaceitem block ~58 ~21 ~44 slot.container 1 netherite_chestplate 11
+				replaceitem block ~58 ~21 ~44 slot.container 2 netherite_helmet 12
+				replaceitem block ~58 ~21 ~44 slot.container 3 netherite_leggings 64
+				replaceitem block ~58 ~21 ~44 slot.container 4 netherite_boots 64
+				replaceitem block ~58 ~21 ~44 slot.container 5 netherite_pickaxe 64
+				replaceitem block ~58 ~21 ~44 slot.container 6 netherite_boots 64
+				replaceitem block ~58 ~21 ~44 slot.container 7 shield 2
+				replaceitem block ~58 ~21 ~44 slot.container 8 enchanted_golden_apple 64
+				
+			setblock ~61 ~21 ~44 chest 2 replace 
+				replaceitem block ~61 ~21 ~44 slot.container 0 netherite_sword 10 
+				replaceitem block ~61 ~21 ~44 slot.container 1 netherite_chestplate 11
+				replaceitem block ~61 ~21 ~44 slot.container 2 netherite_helmet 12
+				replaceitem block ~61 ~21 ~44 slot.container 3 netherite_leggings 64
+				replaceitem block ~61 ~21 ~44 slot.container 4 netherite_boots 64
+				replaceitem block ~61 ~21 ~44 slot.container 5 netherite_pickaxe 64
+				replaceitem block ~61 ~21 ~44 slot.container 6 netherite_boots 64
+				replaceitem block ~61 ~21 ~44 slot.container 7 shield 2
+				replaceitem block ~61 ~21 ~44 slot.container 8 enchanted_golden_apple 64	
+
+		
+		# first floor windows
+			# back wall
+			fill ~56 ~19 ~45		~63 ~19 ~45 glass
+			fill ~56 ~22 ~45		~63 ~23 ~45 glass
+			# front wall
+			fill ~56 ~19 ~34		~63 ~19 ~34 glass
+			fill ~56 ~22 ~34		~63 ~23 ~34 glass
+			# west wall
+			fill ~64 ~19 ~35    ~64 ~19 ~44 glass
+			fill ~64 ~22 ~35    ~64 ~23 ~44 glass
+			# east wall
+			fill ~55 ~19 ~35    ~55 ~19 ~44 glass
+			fill ~55 ~22 ~35    ~55 ~23 ~44 glass
+		
+		#stairs
+			# opening
+			fill ~63 ~20 ~35    ~63 ~20 ~39 air
+			# supports
+			fill ~63 ~17 ~39    ~63 ~19 ~39 quartz_block
+			fill ~63 ~17 ~38    ~63 ~18 ~38 quartz_block
+			fill ~63 ~17 ~37    ~63 ~17 ~37 quartz_block
+			# steps
+			fill ~63 ~17 ~36    ~63 ~17 ~36 quartz_stairs 2
+			fill ~63 ~18 ~37    ~63 ~18 ~37 quartz_stairs 2
+			fill ~63 ~19 ~38    ~63 ~19 ~38 quartz_stairs 2
+			fill ~63 ~20 ~39    ~63 ~20 ~39 quartz_stairs 2
+
+		# front and back black decorations
+			fill ~59 ~17 ~34		~60 ~23 ~34 cracked_polished_blackstone_bricks
+			fill ~59 ~17 ~45		~60 ~23 ~45 cracked_polished_blackstone_bricks
+		# east an west black decorations
+			fill ~55 ~17 ~39    ~55 ~23 ~40 cracked_polished_blackstone_bricks
+			fill ~64 ~17 ~39    ~64 ~23 ~40 cracked_polished_blackstone_bricks
+			
+		# doors
+			setblock ~59 ~17 ~45  spruce_door ["direction": 3,"door_hinge_bit":false]
+			setblock ~60 ~17 ~45  spruce_door ["direction": 3,"door_hinge_bit":true]			
+
+			setblock ~59 ~17 ~34  spruce_door ["direction": 1,"door_hinge_bit":true]
+			setblock ~60 ~17 ~34  spruce_door ["direction": 1,"door_hinge_bit":false]			
+
+		# garden
+			fill ~58 ~17 ~35		~58 ~17 ~44 planks 2
+			fill ~56 ~17 ~35		~57 ~17 ~44 dirt
+			fill ~56 ~18 ~35		~57 ~18 ~44 azalea_leaves_flowered
+
+		# table and benches
+			fill ~61 ~17 ~42		~63 ~17 ~42 planks 2			
+			fill ~62 ~19 ~42		~62 ~19 ~42 ochre_froglight
+			fill ~61 ~17 ~44		~63 ~17 ~44 granite_stairs 2
+			fill ~61 ~17 ~40		~63 ~17 ~40 granite_stairs 3
+			
+		# crafting table and supplies	
+			
+			setblock ~56 ~21 ~39 chest 2 replace	
+				replaceitem block ~56 ~21 ~39 slot.container 0 iron_ingot 20 
+				replaceitem block ~56 ~21 ~39 slot.container 1 diamond 10
+				replaceitem block ~56 ~21 ~39 slot.container 2 coal 64
+				replaceitem block ~56 ~21 ~39 slot.container 3 leather 64
+				replaceitem block ~56 ~21 ~39 slot.container 4 stone 64
+				replaceitem block ~56 ~21 ~39 slot.container 5 wood 64
+
+			setblock ~57 ~21 ~39 chest 2 replace	
+				replaceitem block ~57 ~21 ~39 slot.container 6 iron_ingot 20 
+				replaceitem block ~57 ~21 ~39 slot.container 7 diamond 10
+				replaceitem block ~57 ~21 ~39 slot.container 8 coal 64
+				replaceitem block ~57 ~21 ~39 slot.container 9 leather 64
+				replaceitem block ~57 ~21 ~39 slot.container 10 stone 64
+				replaceitem block ~57 ~21 ~39 slot.container 11 wood 64
+
+			setblock ~60 ~21 ~39 chest 2 replace 
+				replaceitem block ~60 ~21 ~39 slot.container 0 iron_ingot 20 
+				replaceitem block ~60 ~21 ~39 slot.container 1 diamond 10
+				replaceitem block ~60 ~21 ~39 slot.container 2 coal 64
+				replaceitem block ~60 ~21 ~39 slot.container 3 leather 64
+				replaceitem block ~60 ~21 ~39 slot.container 4 stick 64
+				replaceitem block ~60 ~21 ~39 slot.container 5 string 64	
+
+			setblock ~61 ~21 ~39 chest 2 replace 
+				replaceitem block ~61 ~21 ~39 slot.container 6 iron_ingot 20 
+				replaceitem block ~61 ~21 ~39 slot.container 7 diamond 10
+				replaceitem block ~61 ~21 ~39 slot.container 8 coal 64
+				replaceitem block ~61 ~21 ~39 slot.container 9 leather 64
+				replaceitem block ~61 ~21 ~39 slot.container 10 stick 64
+				replaceitem block ~61 ~21 ~39 slot.container 11 string 64			
+			fill ~62 ~21 ~35		~62 ~21 ~39 planks 2
+			
+			
+			fill ~56 ~21 ~35   ~56 ~21 ~35 anvil
+			fill ~57 ~21 ~35   ~57 ~21 ~35 blast_furnace
+			fill ~58 ~21 ~35   ~58 ~21 ~35 grindstone
+			fill ~59 ~21 ~35   ~59 ~21 ~35 furnace
+			fill ~60 ~21 ~35   ~60 ~21 ~35 crafting_table
+			fill ~61 ~21 ~35   ~61 ~21 ~35 stonecutter_block
+
+			fill ~56 ~21 ~44		~57 ~21 ~44	bookshelf
+			fill ~57 ~21 ~42		~57 ~21 ~42	enchanting_table
+			fill ~62 ~21 ~44		~63 ~21 ~44	bookshelf
+
+		
+		# END: West suite third floor
+	
+	
+
+	#END: Third Floor
+
+	# START: fourth Floor
+	
+	#START: East SUITE fourth floor
+		# east wall, first row, other rows
+		fill ~15 ~25 ~35    ~15 ~25 ~44 cracked_polished_blackstone_bricks 
+		fill ~15 ~26 ~35    ~15 ~31 ~44 planks
+		fill ~15 ~28 ~35    ~15 ~28 ~44 cracked_polished_blackstone_bricks 
+	
+		# west wall, first row
+		fill ~24 ~25 ~35   ~24 ~25  ~44 cracked_polished_blackstone_bricks 
+		fill ~24 ~26 ~35   ~24 ~31  ~44 planks
+		fill ~24 ~28 ~35   ~24 ~28  ~44 cracked_polished_blackstone_bricks 
+		
+		# back wall, first row 45 is the back line
+		fill ~16 ~25 ~45		~23 ~25 ~45 cracked_polished_blackstone_bricks 
+		fill ~16 ~26 ~45		~23 ~31 ~45 planks
+		fill ~16 ~28 ~45		~23 ~28 ~45 cracked_polished_blackstone_bricks 
+		
+		# front wall, first row 34 is the front line
+		fill ~16 ~25 ~34		~23 ~25 ~34 cracked_polished_blackstone_bricks
+		fill ~16 ~26 ~34		~23 ~31 ~34 planks
+		fill ~16 ~28 ~34		~23 ~28 ~34 cracked_polished_blackstone_bricks
+
+		# second floor
+		fill ~16 ~28 ~35		~23 ~28 ~44 planks 2
+			
+		# beds
+			setblock ~19 ~29 ~44 bed 4 replace 
+			setblock ~20 ~29 ~44 bed 4 replace 
+			
+		# chests
+			setblock ~18 ~29 ~44 chest 2 replace 
+				replaceitem block ~18 ~29 ~44 slot.container 0 netherite_sword 10 
+				replaceitem block ~18 ~29 ~44 slot.container 1 netherite_chestplate 11
+				replaceitem block ~18 ~29 ~44 slot.container 2 netherite_helmet 12
+				replaceitem block ~18 ~29 ~44 slot.container 3 netherite_leggings 64
+				replaceitem block ~18 ~29 ~44 slot.container 4 netherite_boots 64
+				replaceitem block ~18 ~29 ~44 slot.container 5 netherite_pickaxe 64
+				replaceitem block ~18 ~29 ~44 slot.container 6 netherite_boots 64
+				replaceitem block ~18 ~29 ~44 slot.container 7 shield 2
+				replaceitem block ~18 ~29 ~44 slot.container 8 enchanted_golden_apple 64
+			
+			setblock ~21 ~29 ~44 chest 2 replace 
+				replaceitem block ~21 ~29 ~44 slot.container 0 netherite_sword 10 
+				replaceitem block ~21 ~29 ~44 slot.container 1 netherite_chestplate 11
+				replaceitem block ~21 ~29 ~44 slot.container 2 netherite_helmet 12
+				replaceitem block ~21 ~29 ~44 slot.container 3 netherite_leggings 64
+				replaceitem block ~21 ~29 ~44 slot.container 4 netherite_boots 64
+				replaceitem block ~21 ~29 ~44 slot.container 5 netherite_pickaxe 64
+				replaceitem block ~21 ~29 ~44 slot.container 6 netherite_boots 64
+				replaceitem block ~21 ~29 ~44 slot.container 7 shield 2
+				replaceitem block ~21 ~29 ~44 slot.container 8 enchanted_golden_apple 64	
+		
+		
+		# first floor windows
+			# back wall
+			fill ~16 ~27 ~45		~23 ~27 ~45 glass
+			fill ~16 ~30 ~45		~23 ~31 ~45 glass
+			# front wall
+			fill ~16 ~27 ~34		~23 ~27 ~34 glass
+			fill ~16 ~30 ~34		~23 ~31 ~34 glass
+			# west wall
+			fill ~24 ~27 ~35    ~24 ~27 ~44 glass
+			fill ~24 ~30 ~35    ~24 ~31 ~44 glass
+			# east wall
+			fill ~15 ~27 ~35    ~15 ~27 ~44 glass
+			fill ~15 ~30 ~35    ~15 ~31 ~44 glass
+				
+		#stairs
+			# opening
+			fill ~23 ~28 ~35    ~23 ~28 ~39 air
+			# supports
+			fill ~23 ~25 ~39    ~23 ~27 ~39 quartz_block
+			fill ~23 ~25 ~38    ~23 ~26 ~38 quartz_block
+			fill ~23 ~25 ~37    ~23 ~25 ~37 quartz_block
+			# steps
+			fill ~23 ~25 ~36    ~23 ~25 ~36 quartz_stairs 2
+			fill ~23 ~26 ~37    ~23 ~26 ~37 quartz_stairs 2
+			fill ~23 ~27 ~38    ~23 ~27 ~38 quartz_stairs 2
+			fill ~23 ~28 ~39    ~23 ~28 ~39 quartz_stairs 2
+
+		# front and back black decorations
+			fill ~19 ~25 ~34		~20 ~31 ~34 cracked_polished_blackstone_bricks
+			fill ~19 ~25 ~45		~20 ~31 ~45 cracked_polished_blackstone_bricks
+		# east an west black decorations
+			fill ~15 ~25 ~39    ~15 ~31 ~40 cracked_polished_blackstone_bricks
+			fill ~24 ~25 ~39    ~24 ~31 ~40 cracked_polished_blackstone_bricks
+			
+		# doors
+			setblock ~19 ~25 ~45  spruce_door ["direction": 3,"door_hinge_bit":false]
+			setblock ~20 ~25 ~45  spruce_door ["direction": 3,"door_hinge_bit":true]			
+
+			setblock ~19 ~25 ~34  spruce_door ["direction": 1,"door_hinge_bit":true]
+			setblock ~20 ~25 ~34  spruce_door ["direction": 1,"door_hinge_bit":false]			
+
+		# garden
+			fill ~18 ~25 ~35		~18 ~25 ~44 planks 2
+			fill ~16 ~25 ~35		~17 ~25 ~44 dirt
+			fill ~16 ~26 ~35		~17 ~26 ~44 azalea_leaves_flowered
+			
+		# table and benches
+			fill ~21 ~25 ~42		~23 ~25 ~42 planks 2			
+			fill ~22 ~27 ~42		~22 ~27 ~42 ochre_froglight
+			fill ~21 ~25 ~44		~23 ~25 ~44 granite_stairs 2
+			fill ~21 ~25 ~40		~23 ~25 ~40 granite_stairs 3
+			
+		# crafting table and supplies	
+			
+			setblock ~16 ~29 ~39 chest 2 replace	
+				replaceitem block ~16 ~29 ~39 slot.container 0 iron_ingot 20 
+				replaceitem block ~16 ~29 ~39 slot.container 1 diamond 10
+				replaceitem block ~16 ~29 ~39 slot.container 2 coal 64
+				replaceitem block ~16 ~29 ~39 slot.container 3 leather 64
+				replaceitem block ~16 ~29 ~39 slot.container 4 stone 64
+				replaceitem block ~16 ~29 ~39 slot.container 5 wood 64
+
+			setblock ~17 ~29 ~39 chest 2 replace	
+				replaceitem block ~17 ~29 ~39 slot.container 6 iron_ingot 20 
+				replaceitem block ~17 ~29 ~39 slot.container 7 diamond 10
+				replaceitem block ~17 ~29 ~39 slot.container 8 coal 64
+				replaceitem block ~17 ~29 ~39 slot.container 9 leather 64
+				replaceitem block ~17 ~29 ~39 slot.container 10 stone 64
+				replaceitem block ~17 ~29 ~39 slot.container 11 wood 64
+
+			setblock ~20 ~29 ~39 chest 2 replace 
+				replaceitem block ~20 ~29 ~39 slot.container 0 iron_ingot 20 
+				replaceitem block ~20 ~29 ~39 slot.container 1 diamond 10
+				replaceitem block ~20 ~29 ~39 slot.container 2 coal 64
+				replaceitem block ~20 ~29 ~39 slot.container 3 leather 64
+				replaceitem block ~20 ~29 ~39 slot.container 4 stick 64
+				replaceitem block ~20 ~29 ~39 slot.container 5 string 64	
+
+			setblock ~21 ~29 ~39 chest 2 replace 
+				replaceitem block ~21 ~29 ~39 slot.container 6 iron_ingot 20 
+				replaceitem block ~21 ~29 ~39 slot.container 7 diamond 10
+				replaceitem block ~21 ~29 ~39 slot.container 8 coal 64
+				replaceitem block ~21 ~29 ~39 slot.container 9 leather 64
+				replaceitem block ~21 ~29 ~39 slot.container 10 stick 64
+				replaceitem block ~21 ~29 ~39 slot.container 11 string 64			
+			fill ~22 ~29 ~35		~22 ~29 ~39 planks 2
+
+			
+			
+			fill ~16 ~29 ~35   ~16 ~29 ~35 anvil
+			fill ~17 ~29 ~35   ~17 ~29 ~35 blast_furnace
+			fill ~18 ~29 ~35   ~18 ~29 ~35 grindstone
+			fill ~19 ~29 ~35   ~19 ~29 ~35 furnace
+			fill ~20 ~29 ~35   ~20 ~29 ~35 crafting_table
+			fill ~21 ~29 ~35   ~21 ~29 ~35 stonecutter_block
+
+			fill ~16 ~29 ~44		~17 ~29 ~44	bookshelf
+			fill ~17 ~29 ~42		~17 ~29 ~42	enchanting_table
+			fill ~22 ~29 ~44		~23 ~29 ~44	bookshelf
+
+
+			
+	#END: East SUITE fourth floor
+	
+
+	#START: West SUITE fourth floor
+		# east wall, first row, other rows
+		fill ~55 ~25 ~35    ~55 ~25 ~44 cracked_polished_blackstone_bricks 
+		fill ~55 ~26 ~35    ~55 ~31 ~44 planks
+		fill ~55 ~28 ~35    ~55 ~28 ~44 cracked_polished_blackstone_bricks 
+	
+		# west wall, first row
+		fill ~64 ~25 ~35   ~64 ~25  ~44 cracked_polished_blackstone_bricks 
+		fill ~64 ~26 ~35   ~64 ~31  ~44 planks
+		fill ~64 ~28 ~35   ~64 ~28  ~44 cracked_polished_blackstone_bricks 
+		
+		# back wall, first row 45 is the back line
+		fill ~56 ~25 ~45		~63 ~25 ~45 cracked_polished_blackstone_bricks 
+		fill ~56 ~26 ~45		~63 ~31 ~45 planks
+		fill ~56 ~28 ~45		~63 ~28 ~45 cracked_polished_blackstone_bricks 
+		
+		# front wall, first row 34 is the front line
+		fill ~56 ~25 ~34		~63 ~25 ~34 cracked_polished_blackstone_bricks
+		fill ~56 ~26 ~34		~63 ~31 ~34 planks
+		fill ~56 ~28 ~34		~63 ~28 ~34 cracked_polished_blackstone_bricks
+
+		# second floor
+		fill ~56 ~28 ~35		~63 ~28 ~44 planks 2
+
+		# beds
+			setblock ~59 ~29 ~44 bed 4 replace 
+			setblock ~60 ~29 ~44 bed 4 replace 
+			
+		# chests
+			setblock ~58 ~29 ~44 chest 2 replace 
+				replaceitem block ~58 ~29 ~44 slot.container 0 netherite_sword 10 
+				replaceitem block ~58 ~29 ~44 slot.container 1 netherite_chestplate 11
+				replaceitem block ~58 ~29 ~44 slot.container 2 netherite_helmet 12
+				replaceitem block ~58 ~29 ~44 slot.container 3 netherite_leggings 64
+				replaceitem block ~58 ~29 ~44 slot.container 4 netherite_boots 64
+				replaceitem block ~58 ~29 ~44 slot.container 5 netherite_pickaxe 64
+				replaceitem block ~58 ~29 ~44 slot.container 6 netherite_boots 64
+				replaceitem block ~58 ~29 ~44 slot.container 7 shield 2
+				replaceitem block ~58 ~29 ~44 slot.container 8 enchanted_golden_apple 64
+				
+			setblock ~61 ~29 ~44 chest 2 replace 
+				replaceitem block ~61 ~29 ~44 slot.container 0 netherite_sword 10 
+				replaceitem block ~61 ~29 ~44 slot.container 1 netherite_chestplate 11
+				replaceitem block ~61 ~29 ~44 slot.container 2 netherite_helmet 12
+				replaceitem block ~61 ~29 ~44 slot.container 3 netherite_leggings 64
+				replaceitem block ~61 ~29 ~44 slot.container 4 netherite_boots 64
+				replaceitem block ~61 ~29 ~44 slot.container 5 netherite_pickaxe 64
+				replaceitem block ~61 ~29 ~44 slot.container 6 netherite_boots 64
+				replaceitem block ~61 ~29 ~44 slot.container 7 shield 2
+				replaceitem block ~61 ~29 ~44 slot.container 8 enchanted_golden_apple 64	
+
+		
+		# first floor windows
+			# back wall
+			fill ~56 ~27 ~45		~63 ~27 ~45 glass
+			fill ~56 ~30 ~45		~63 ~31 ~45 glass
+			# front wall
+			fill ~56 ~27 ~34		~63 ~27 ~34 glass
+			fill ~56 ~30 ~34		~63 ~31 ~34 glass
+			# west wall
+			fill ~64 ~27 ~35    ~64 ~27 ~44 glass
+			fill ~64 ~30 ~35    ~64 ~31 ~44 glass
+			# east wall
+			fill ~55 ~27 ~35    ~55 ~27 ~44 glass
+			fill ~55 ~30 ~35    ~55 ~31 ~44 glass
+		
+		#stairs
+			# opening
+			fill ~63 ~28 ~35    ~63 ~28 ~39 air
+			# supports
+			fill ~63 ~25 ~39    ~63 ~27 ~39 quartz_block
+			fill ~63 ~25 ~38    ~63 ~26 ~38 quartz_block
+			fill ~63 ~25 ~37    ~63 ~25 ~37 quartz_block
+			# steps
+			fill ~63 ~25 ~36    ~63 ~25 ~36 quartz_stairs 2
+			fill ~63 ~26 ~37    ~63 ~26 ~37 quartz_stairs 2
+			fill ~63 ~27 ~38    ~63 ~27 ~38 quartz_stairs 2
+			fill ~63 ~28 ~39    ~63 ~28 ~39 quartz_stairs 2
+
+		# front and back black decorations
+			fill ~59 ~25 ~34		~60 ~31 ~34 cracked_polished_blackstone_bricks
+			fill ~59 ~25 ~45		~60 ~31 ~45 cracked_polished_blackstone_bricks
+		# east an west black decorations
+			fill ~55 ~25 ~39    ~55 ~31 ~40 cracked_polished_blackstone_bricks
+			fill ~64 ~25 ~39    ~64 ~31 ~40 cracked_polished_blackstone_bricks
+			
+		# doors
+			setblock ~59 ~25 ~45  spruce_door ["direction": 3,"door_hinge_bit":false]
+			setblock ~60 ~25 ~45  spruce_door ["direction": 3,"door_hinge_bit":true]			
+
+			setblock ~59 ~25 ~34  spruce_door ["direction": 1,"door_hinge_bit":true]
+			setblock ~60 ~25 ~34  spruce_door ["direction": 1,"door_hinge_bit":false]			
+
+		# garden
+			fill ~58 ~25 ~35		~58 ~25 ~44 planks 2
+			fill ~56 ~25 ~35		~57 ~25 ~44 dirt
+			fill ~56 ~26 ~35		~57 ~26 ~44 azalea_leaves_flowered
+
+		# table and benches
+			fill ~61 ~25 ~42		~63 ~25 ~42 planks 2			
+			fill ~62 ~27 ~42		~62 ~27 ~42 ochre_froglight
+			fill ~61 ~25 ~44		~63 ~25 ~44 granite_stairs 2
+			fill ~61 ~25 ~40		~63 ~25 ~40 granite_stairs 3
+			
+		# crafting table and supplies	
+			
+			setblock ~56 ~29 ~39 chest 2 replace	
+				replaceitem block ~56 ~29 ~39 slot.container 0 iron_ingot 20 
+				replaceitem block ~56 ~29 ~39 slot.container 1 diamond 10
+				replaceitem block ~56 ~29 ~39 slot.container 2 coal 64
+				replaceitem block ~56 ~29 ~39 slot.container 3 leather 64
+				replaceitem block ~56 ~29 ~39 slot.container 4 stone 64
+				replaceitem block ~56 ~29 ~39 slot.container 5 wood 64
+
+			setblock ~57 ~29 ~39 chest 2 replace	
+				replaceitem block ~57 ~29 ~39 slot.container 6 iron_ingot 20 
+				replaceitem block ~57 ~29 ~39 slot.container 7 diamond 10
+				replaceitem block ~57 ~29 ~39 slot.container 8 coal 64
+				replaceitem block ~57 ~29 ~39 slot.container 9 leather 64
+				replaceitem block ~57 ~29 ~39 slot.container 10 stone 64
+				replaceitem block ~57 ~29 ~39 slot.container 11 wood 64
+
+			setblock ~60 ~29 ~39 chest 2 replace 
+				replaceitem block ~60 ~29 ~39 slot.container 0 iron_ingot 20 
+				replaceitem block ~60 ~29 ~39 slot.container 1 diamond 10
+				replaceitem block ~60 ~29 ~39 slot.container 2 coal 64
+				replaceitem block ~60 ~29 ~39 slot.container 3 leather 64
+				replaceitem block ~60 ~29 ~39 slot.container 4 stick 64
+				replaceitem block ~60 ~29 ~39 slot.container 5 string 64	
+
+			setblock ~61 ~29 ~39 chest 2 replace 
+				replaceitem block ~61 ~29 ~39 slot.container 6 iron_ingot 20 
+				replaceitem block ~61 ~29 ~39 slot.container 7 diamond 10
+				replaceitem block ~61 ~29 ~39 slot.container 8 coal 64
+				replaceitem block ~61 ~29 ~39 slot.container 9 leather 64
+				replaceitem block ~61 ~29 ~39 slot.container 10 stick 64
+				replaceitem block ~61 ~29 ~39 slot.container 11 string 64			
+			fill ~62 ~29 ~35		~62 ~29 ~39 planks 2
+	
+			
+			fill ~56 ~29 ~35   ~56 ~29 ~35 anvil
+			fill ~57 ~29 ~35   ~57 ~29 ~35 blast_furnace
+			fill ~58 ~29 ~35   ~58 ~29 ~35 grindstone
+			fill ~59 ~29 ~35   ~59 ~29 ~35 furnace
+			fill ~60 ~29 ~35   ~60 ~29 ~35 crafting_table
+			fill ~61 ~29 ~35   ~61 ~29 ~35 stonecutter_block
+
+			fill ~56 ~29 ~44		~57 ~29 ~44	bookshelf
+			fill ~57 ~29 ~42		~57 ~29 ~42	enchanting_table
+			fill ~62 ~29 ~44		~63 ~29 ~44	bookshelf
+
+		
+		# END: West suite fourth floor
+	
+	
+
+	#END: fourth Floor
+
+
+
+
+# END: side suites
+
+
+# Links and resources
+# https://bedrock.dev/docs/1.2.0.0/1.2.9.1/Addons
+# https://bedrock.dev/docs/1.19.0.0/1.19.20.24/Addons#BlockStates
+# banner_pattern
+# globe_banner_pattern :: 588
+# skull_banner_pattern :: 583
+# flower_type	String	
+#	poppy, orchid, allium, houstonia, tulip_red, tulip_orange, tulip_white, tulip_pink, oxeye, cornflower, lily_of_the_valley	
+# 	Determines the type of a flower block
+# facing_direction :: 
+# 	Determines the Up, Down, North, South, East, and West direction of some blocks. 
+#	0 = Down, 1 = Up, 2 = North, 3 = South, 4 = West, 5 = East
+# direction :: int {0-3} :: Determines the North, South, East, and West direction of some blocks. 0 = South, 1 = West, 2 = North 3 = East
+# /setblock ~0 ~1 ~1 wall_banner 4
+# /setblock ~-1 ~1 ~1 wall_banner ["facing_direction": 2] -- north facing on side of block
+# /setblock ~-1 ~1 ~1 wall_banner ["facing_direction": 4] -- west facing on side of block
+# /setblock ~-1 ~1 ~1 wall_banner ["facing_direction": 5] -- east facing on side of block
+# bamboo_stalk_thickness == thin, thick :: a blockstate
+# /setblock ~1 ~0 ~1 bamboo ["bamboo_stalk_thickness": "thin"]
+# /setblock ~1 ~0 ~1 bamboo ["bamboo_stalk_thickness": "thick"]
+# bamboo_leaf_size == no_leaves, small_leaves, large_leaves
+# /setblock ~1 ~0 ~1 bamboo ["bamboo_stalk_thickness": "thick", "bamboo_leaf_size": "large_leaves"]
+# /fill  ~0 ~1 ~1  ~0 ~1 ~1 glow_frame ["facing_direction": 5]
+# https://bedrock.dev/docs/stable/Schemas
+# https://wiki.bedrock.dev/commands/nbt-commands.html
+# https://minecraft.fandom.com/wiki/Target_selectors
+# https://gist.github.com/tryashtar/212472b770ef32887ccd79627352a199
+# block: red_flower
+#   blockstate: flower_type
+#    poppy,orchid,  allium,  houstonia,tulip_red,tulip_orange,tulip_white,      tulip_pink,     oxeye,      cornflower,      lily_of_the_valley
+
+# START: Diners
+
+	# Floor: 1 - EAST
+		# 		fill ~24 ~1 ~35   ~24 ~1  ~44 cracked_polished_blackstone_bricks 
+		# Outer wall 
+			fill ~28 ~1 ~35   ~28 ~1  ~44 iron_block 
+			fill ~28 ~1 ~39   ~28 ~1  ~40 air
+			fill ~28 ~2 ~35   ~28 ~2  ~44 stained_glass  ["color": "green"]
+			fill ~28 ~2 ~37   ~28 ~2  ~42 air
+		# North wall
+			fill ~25 ~1 ~34   ~28 ~1  ~34 iron_block 
+			fill ~25 ~2 ~34   ~28 ~2  ~34 stained_glass  ["color": "green"]
+			fill ~27 ~1 ~38   ~27 ~1 ~38 iron_block 
+			fill ~24 ~1 ~39   ~24 ~1 ~40 ochre_froglight
+			
+		# South wall
+			fill ~25 ~1 ~45   ~28 ~1  ~45 iron_block 
+			fill ~25 ~2 ~45   ~28 ~2  ~45 stained_glass  ["color": "green"]
+			fill ~27 ~1 ~41   ~27 ~1 ~41 iron_block 
+			fill ~24 ~1 ~44   ~24 ~1 ~44 ochre_froglight
+
+		# Furnaces
+			fill ~25 ~1 ~35   ~25 ~1  ~35 furnace 0
+			fill ~25 ~1 ~44   ~25 ~1  ~44 furnace 2
+			
+		# Chests - direction 5 for west diner, 4 for east diner
+			fill ~27 ~1 ~35   ~27 ~1 ~36 chest 4
+				replaceitem block ~27 ~1 ~35 slot.container 0 coal 64 
+				replaceitem block ~27 ~1 ~35 slot.container 1 wood 64 
+				replaceitem block ~27 ~1 ~35 slot.container 2 beef 64
+				replaceitem block ~27 ~1 ~35 slot.container 3 cod 64
+				replaceitem block ~27 ~1 ~35 slot.container 4 apple 64
+				replaceitem block ~27 ~1 ~35 slot.container 5 bread 64
+				replaceitem block ~27 ~1 ~35 slot.container 6 potato 64
+				replaceitem block ~27 ~1 ~35 slot.container 7 melon_slice 64
+				replaceitem block ~27 ~1 ~35 slot.container 8 carrot 64
+				replaceitem block ~27 ~1 ~35 slot.container 8 salmon 64
+			fill ~27 ~1 ~43   ~27 ~1 ~44 chest 4
+				replaceitem block ~27 ~1 ~43 slot.container 0 coal 64 
+				replaceitem block ~27 ~1 ~43 slot.container 1 wood 64 
+				replaceitem block ~27 ~1 ~43 slot.container 2 beef 64
+				replaceitem block ~27 ~1 ~43 slot.container 3 cod 64
+				replaceitem block ~27 ~1 ~43 slot.container 4 apple 64
+				replaceitem block ~27 ~1 ~43 slot.container 5 bread 64
+				replaceitem block ~27 ~1 ~43 slot.container 6 potato 64
+				replaceitem block ~27 ~1 ~43 slot.container 7 melon_slice 64
+				replaceitem block ~27 ~1 ~43 slot.container 8 carrot 64
+				replaceitem block ~27 ~1 ~43 slot.container 8 salmon 64
+
+	# Floor: 1 - WEST
+		# Outer wall 
+			fill ~51 ~1 ~35   ~51 ~1  ~44 iron_block 
+			fill ~51 ~1 ~39   ~51 ~1  ~40 air
+			fill ~51 ~2 ~35   ~51 ~2  ~44 stained_glass  ["color": "green"]
+			fill ~51 ~2 ~37   ~51 ~2  ~42 air
+		# North wall
+			fill ~51 ~1 ~34   ~54 ~1  ~34 iron_block 
+			fill ~51 ~2 ~34   ~54 ~2  ~34 stained_glass  ["color": "green"]
+			fill ~52 ~1 ~38   ~52 ~1 ~38 iron_block 		
+			fill ~55 ~1 ~39   ~55 ~1 ~40 ochre_froglight
+			
+		# South wall
+			fill ~51 ~1 ~45   ~54 ~1  ~45 iron_block 
+			fill ~51 ~2 ~45   ~54 ~2  ~45 stained_glass  ["color": "green"]
+			fill ~52 ~1 ~41   ~52 ~1 ~41 iron_block 
+			fill ~55 ~1 ~44   ~55 ~1 ~44 ochre_froglight
+
+		# Furnaces
+			fill ~54 ~1 ~35   ~54 ~1  ~35 furnace 0
+			fill ~54 ~1 ~44   ~54 ~1  ~44 furnace 2
+			
+		# Chests - direction 5 for west diner, 4 for east diner
+			fill ~52 ~1 ~35   ~52 ~1 ~36 chest 5
+				replaceitem block ~52 ~1 ~35 slot.container 0 coal 64 
+				replaceitem block ~52 ~1 ~35 slot.container 1 wood 64 
+				replaceitem block ~52 ~1 ~35 slot.container 2 beef 64
+				replaceitem block ~52 ~1 ~35 slot.container 3 cod 64
+				replaceitem block ~52 ~1 ~35 slot.container 4 apple 64
+				replaceitem block ~52 ~1 ~35 slot.container 5 bread 64
+				replaceitem block ~52 ~1 ~35 slot.container 6 potato 64
+				replaceitem block ~52 ~1 ~35 slot.container 7 melon_slice 64
+				replaceitem block ~52 ~1 ~35 slot.container 8 carrot 64
+				replaceitem block ~52 ~1 ~35 slot.container 8 salmon 64
+			fill ~52 ~1 ~43   ~52 ~1 ~44 chest 5
+				replaceitem block ~52 ~1 ~43 slot.container 0 coal 64 
+				replaceitem block ~52 ~1 ~43 slot.container 1 wood 64 
+				replaceitem block ~52 ~1 ~43 slot.container 2 beef 64
+				replaceitem block ~52 ~1 ~43 slot.container 3 cod 64
+				replaceitem block ~52 ~1 ~43 slot.container 4 apple 64
+				replaceitem block ~52 ~1 ~43 slot.container 5 bread 64
+				replaceitem block ~52 ~1 ~43 slot.container 6 potato 64
+				replaceitem block ~52 ~1 ~43 slot.container 7 melon_slice 64
+				replaceitem block ~52 ~1 ~43 slot.container 8 carrot 64
+				replaceitem block ~52 ~1 ~43 slot.container 8 salmon 64
+
+
+	# Floor: 2 - EAST
+		# 		fill ~24 ~9 ~35   ~24 ~9  ~44 cracked_polished_blackstone_bricks 
+		# Outer wall 
+			fill ~28 ~9 ~35   ~28 ~9  ~44 iron_block 
+			fill ~28 ~9 ~39   ~28 ~9  ~40 air
+			fill ~28 ~10 ~35   ~28 ~10  ~44 stained_glass  ["color": "green"]
+			fill ~28 ~10 ~37   ~28 ~10  ~42 air
+		# North wall
+			fill ~25 ~9 ~34   ~28 ~9  ~34 iron_block 
+			fill ~25 ~10 ~34   ~28 ~10  ~34 stained_glass  ["color": "green"]
+			fill ~27 ~9 ~38   ~27 ~9 ~38 iron_block 
+			fill ~24 ~9 ~39   ~24 ~9 ~40 ochre_froglight
+			
+		# South wall
+			fill ~25 ~9 ~45   ~28 ~9  ~45 iron_block 
+			fill ~25 ~10 ~45   ~28 ~10  ~45 stained_glass  ["color": "green"]
+			fill ~27 ~9 ~41   ~27 ~9 ~41 iron_block 
+			fill ~24 ~9 ~44   ~24 ~9 ~44 ochre_froglight
+
+		# Furnaces
+			fill ~25 ~9 ~35   ~25 ~9  ~35 furnace 0
+			fill ~25 ~9 ~44   ~25 ~9  ~44 furnace 2
+			
+		# Chests - direction 5 for west diner, 4 for east diner
+			fill ~27 ~9 ~35   ~27 ~9 ~36 chest 4
+				replaceitem block ~27 ~9 ~35 slot.container 0 coal 64 
+				replaceitem block ~27 ~9 ~35 slot.container 1 wood 64 
+				replaceitem block ~27 ~9 ~35 slot.container 2 beef 64
+				replaceitem block ~27 ~9 ~35 slot.container 3 cod 64
+				replaceitem block ~27 ~9 ~35 slot.container 4 apple 64
+				replaceitem block ~27 ~9 ~35 slot.container 5 bread 64
+				replaceitem block ~27 ~9 ~35 slot.container 6 potato 64
+				replaceitem block ~27 ~9 ~35 slot.container 7 melon_slice 64
+				replaceitem block ~27 ~9 ~35 slot.container 8 carrot 64
+				replaceitem block ~27 ~9 ~35 slot.container 8 salmon 64
+			fill ~27 ~9 ~43   ~27 ~9 ~44 chest 4
+				replaceitem block ~27 ~9 ~43 slot.container 0 coal 64 
+				replaceitem block ~27 ~9 ~43 slot.container 1 wood 64 
+				replaceitem block ~27 ~9 ~43 slot.container 2 beef 64
+				replaceitem block ~27 ~9 ~43 slot.container 3 cod 64
+				replaceitem block ~27 ~9 ~43 slot.container 4 apple 64
+				replaceitem block ~27 ~9 ~43 slot.container 5 bread 64
+				replaceitem block ~27 ~9 ~43 slot.container 6 potato 64
+				replaceitem block ~27 ~9 ~43 slot.container 7 melon_slice 64
+				replaceitem block ~27 ~9 ~43 slot.container 8 carrot 64
+				replaceitem block ~27 ~9 ~43 slot.container 8 salmon 64
+
+	# Floor: 2 - WEST
+		# Outer wall 
+			fill ~51 ~9 ~35   ~51 ~9  ~44 iron_block 
+			fill ~51 ~9 ~39   ~51 ~9  ~40 air
+			fill ~51 ~10 ~35   ~51 ~10  ~44 stained_glass  ["color": "green"]
+			fill ~51 ~10 ~37   ~51 ~10  ~42 air
+		# North wall
+			fill ~51 ~9 ~34   ~54 ~9  ~34 iron_block 
+			fill ~51 ~10 ~34   ~54 ~10  ~34 stained_glass  ["color": "green"]
+			fill ~52 ~9 ~38   ~52 ~9 ~38 iron_block 		
+			fill ~55 ~9 ~39   ~55 ~9 ~40 ochre_froglight
+			
+		# South wall
+			fill ~51 ~9 ~45   ~54 ~9  ~45 iron_block 
+			fill ~51 ~10 ~45   ~54 ~10  ~45 stained_glass  ["color": "green"]
+			fill ~52 ~9 ~41   ~52 ~9 ~41 iron_block 
+			fill ~55 ~9 ~44   ~55 ~9 ~44 ochre_froglight
+
+		# Furnaces
+			fill ~54 ~9 ~35   ~54 ~9  ~35 furnace 0
+			fill ~54 ~9 ~44   ~54 ~9  ~44 furnace 2
+			
+		# Chests - direction 5 for west diner, 4 for east diner
+			fill ~52 ~9 ~35   ~52 ~9 ~36 chest 5
+				replaceitem block ~52 ~9 ~35 slot.container 0 coal 64 
+				replaceitem block ~52 ~9 ~35 slot.container 1 wood 64 
+				replaceitem block ~52 ~9 ~35 slot.container 2 beef 64
+				replaceitem block ~52 ~9 ~35 slot.container 3 cod 64
+				replaceitem block ~52 ~9 ~35 slot.container 4 apple 64
+				replaceitem block ~52 ~9 ~35 slot.container 5 bread 64
+				replaceitem block ~52 ~9 ~35 slot.container 6 potato 64
+				replaceitem block ~52 ~9 ~35 slot.container 7 melon_slice 64
+				replaceitem block ~52 ~9 ~35 slot.container 8 carrot 64
+				replaceitem block ~52 ~9 ~35 slot.container 8 salmon 64
+			fill ~52 ~9 ~43   ~52 ~9 ~44 chest 5
+				replaceitem block ~52 ~9 ~43 slot.container 0 coal 64 
+				replaceitem block ~52 ~9 ~43 slot.container 1 wood 64 
+				replaceitem block ~52 ~9 ~43 slot.container 2 beef 64
+				replaceitem block ~52 ~9 ~43 slot.container 3 cod 64
+				replaceitem block ~52 ~9 ~43 slot.container 4 apple 64
+				replaceitem block ~52 ~9 ~43 slot.container 5 bread 64
+				replaceitem block ~52 ~9 ~43 slot.container 6 potato 64
+				replaceitem block ~52 ~9 ~43 slot.container 7 melon_slice 64
+				replaceitem block ~52 ~9 ~43 slot.container 8 carrot 64
+				replaceitem block ~52 ~9 ~43 slot.container 8 salmon 64
+				
+				
+	# Floor: 3 - EAST
+		# 		fill ~24 ~17 ~35   ~24 ~17  ~44 cracked_polished_blackstone_bricks 
+		# Outer wall 
+			fill ~28 ~17 ~35   ~28 ~17  ~44 iron_block 
+			fill ~28 ~17 ~39   ~28 ~17  ~40 air
+			fill ~28 ~18 ~35   ~28 ~18  ~44 stained_glass  ["color": "green"]
+			fill ~28 ~18 ~37   ~28 ~18  ~42 air
+		# North wall
+			fill ~25 ~17 ~34   ~28 ~17  ~34 iron_block 
+			fill ~25 ~18 ~34   ~28 ~18  ~34 stained_glass  ["color": "green"]
+			fill ~27 ~17 ~38   ~27 ~17 ~38 iron_block 
+			fill ~24 ~17 ~39   ~24 ~17 ~40 ochre_froglight
+			
+		# South wall
+			fill ~25 ~17 ~45   ~28 ~17  ~45 iron_block 
+			fill ~25 ~18 ~45   ~28 ~18  ~45 stained_glass  ["color": "green"]
+			fill ~27 ~17 ~41   ~27 ~17 ~41 iron_block 
+			fill ~24 ~17 ~44   ~24 ~17 ~44 ochre_froglight
+
+		# Furnaces
+			fill ~25 ~17 ~35   ~25 ~17  ~35 furnace 0
+			fill ~25 ~17 ~44   ~25 ~17  ~44 furnace 2
+			
+		# Chests - direction 5 for west diner, 4 for east diner
+			fill ~27 ~17 ~35   ~27 ~17 ~36 chest 4
+				replaceitem block ~27 ~17 ~35 slot.container 0 coal 64 
+				replaceitem block ~27 ~17 ~35 slot.container 1 wood 64 
+				replaceitem block ~27 ~17 ~35 slot.container 2 beef 64
+				replaceitem block ~27 ~17 ~35 slot.container 3 cod 64
+				replaceitem block ~27 ~17 ~35 slot.container 4 apple 64
+				replaceitem block ~27 ~17 ~35 slot.container 5 bread 64
+				replaceitem block ~27 ~17 ~35 slot.container 6 potato 64
+				replaceitem block ~27 ~17 ~35 slot.container 7 melon_slice 64
+				replaceitem block ~27 ~17 ~35 slot.container 8 carrot 64
+				replaceitem block ~27 ~17 ~35 slot.container 8 salmon 64
+			fill ~27 ~17 ~43   ~27 ~17 ~44 chest 4
+				replaceitem block ~27 ~17 ~43 slot.container 0 coal 64 
+				replaceitem block ~27 ~17 ~43 slot.container 1 wood 64 
+				replaceitem block ~27 ~17 ~43 slot.container 2 beef 64
+				replaceitem block ~27 ~17 ~43 slot.container 3 cod 64
+				replaceitem block ~27 ~17 ~43 slot.container 4 apple 64
+				replaceitem block ~27 ~17 ~43 slot.container 5 bread 64
+				replaceitem block ~27 ~17 ~43 slot.container 6 potato 64
+				replaceitem block ~27 ~17 ~43 slot.container 7 melon_slice 64
+				replaceitem block ~27 ~17 ~43 slot.container 8 carrot 64
+				replaceitem block ~27 ~17 ~43 slot.container 8 salmon 64
+
+	# Floor: 3 - WEST
+		# Outer wall 
+			fill ~51 ~17 ~35   ~51 ~17  ~44 iron_block 
+			fill ~51 ~17 ~39   ~51 ~17  ~40 air
+			fill ~51 ~18 ~35   ~51 ~18  ~44 stained_glass  ["color": "green"]
+			fill ~51 ~18 ~37   ~51 ~18  ~42 air
+		# North wall
+			fill ~51 ~17 ~34   ~54 ~17  ~34 iron_block 
+			fill ~51 ~18 ~34   ~54 ~18  ~34 stained_glass  ["color": "green"]
+			fill ~52 ~17 ~38   ~52 ~17 ~38 iron_block 		
+			fill ~55 ~17 ~39   ~55 ~17 ~40 ochre_froglight
+			
+		# South wall
+			fill ~51 ~17 ~45   ~54 ~17  ~45 iron_block 
+			fill ~51 ~18 ~45   ~54 ~18  ~45 stained_glass  ["color": "green"]
+			fill ~52 ~17 ~41   ~52 ~17 ~41 iron_block 
+			fill ~55 ~17 ~44   ~55 ~17 ~44 ochre_froglight
+
+		# Furnaces
+			fill ~54 ~17 ~35   ~54 ~17  ~35 furnace 0
+			fill ~54 ~17 ~44   ~54 ~17  ~44 furnace 2
+			
+		# Chests - direction 5 for west diner, 4 for east diner
+			fill ~52 ~17 ~35   ~52 ~17 ~36 chest 5
+				replaceitem block ~52 ~17 ~35 slot.container 0 coal 64 
+				replaceitem block ~52 ~17 ~35 slot.container 1 wood 64 
+				replaceitem block ~52 ~17 ~35 slot.container 2 beef 64
+				replaceitem block ~52 ~17 ~35 slot.container 3 cod 64
+				replaceitem block ~52 ~17 ~35 slot.container 4 apple 64
+				replaceitem block ~52 ~17 ~35 slot.container 5 bread 64
+				replaceitem block ~52 ~17 ~35 slot.container 6 potato 64
+				replaceitem block ~52 ~17 ~35 slot.container 7 melon_slice 64
+				replaceitem block ~52 ~17 ~35 slot.container 8 carrot 64
+				replaceitem block ~52 ~17 ~35 slot.container 8 salmon 64
+			fill ~52 ~17 ~43   ~52 ~17 ~44 chest 5
+				replaceitem block ~52 ~17 ~43 slot.container 0 coal 64 
+				replaceitem block ~52 ~17 ~43 slot.container 1 wood 64 
+				replaceitem block ~52 ~17 ~43 slot.container 2 beef 64
+				replaceitem block ~52 ~17 ~43 slot.container 3 cod 64
+				replaceitem block ~52 ~17 ~43 slot.container 4 apple 64
+				replaceitem block ~52 ~17 ~43 slot.container 5 bread 64
+				replaceitem block ~52 ~17 ~43 slot.container 6 potato 64
+				replaceitem block ~52 ~17 ~43 slot.container 7 melon_slice 64
+				replaceitem block ~52 ~17 ~43 slot.container 8 carrot 64
+				replaceitem block ~52 ~17 ~43 slot.container 8 salmon 64
+				
+				
+	# Floor: 4 - EAST
+		# 		fill ~24 ~25 ~35   ~24 ~25  ~44 cracked_polished_blackstone_bricks 
+		# Outer wall 
+			fill ~28 ~25 ~35   ~28 ~25  ~44 iron_block 
+			fill ~28 ~25 ~39   ~28 ~25  ~40 air
+			fill ~28 ~26 ~35   ~28 ~26  ~44 stained_glass  ["color": "green"]
+			fill ~28 ~26 ~37   ~28 ~26  ~42 air
+		# North wall
+			fill ~25 ~25 ~34   ~28 ~25  ~34 iron_block 
+			fill ~25 ~26 ~34   ~28 ~26  ~34 stained_glass  ["color": "green"]
+			fill ~27 ~25 ~38   ~27 ~25 ~38 iron_block 
+			fill ~24 ~25 ~39   ~24 ~25 ~40 ochre_froglight
+			
+		# South wall
+			fill ~25 ~25 ~45   ~28 ~25  ~45 iron_block 
+			fill ~25 ~26 ~45   ~28 ~26  ~45 stained_glass  ["color": "green"]
+			fill ~27 ~25 ~41   ~27 ~25 ~41 iron_block 
+			fill ~24 ~25 ~44   ~24 ~25 ~44 ochre_froglight
+
+		# Furnaces
+			fill ~25 ~25 ~35   ~25 ~25  ~35 furnace 0
+			fill ~25 ~25 ~44   ~25 ~25  ~44 furnace 2
+			
+		# Chests - direction 5 for west diner, 4 for east diner
+			fill ~27 ~25 ~35   ~27 ~25 ~36 chest 4
+				replaceitem block ~27 ~25 ~35 slot.container 0 coal 64 
+				replaceitem block ~27 ~25 ~35 slot.container 1 wood 64 
+				replaceitem block ~27 ~25 ~35 slot.container 2 beef 64
+				replaceitem block ~27 ~25 ~35 slot.container 3 cod 64
+				replaceitem block ~27 ~25 ~35 slot.container 4 apple 64
+				replaceitem block ~27 ~25 ~35 slot.container 5 bread 64
+				replaceitem block ~27 ~25 ~35 slot.container 6 potato 64
+				replaceitem block ~27 ~25 ~35 slot.container 7 melon_slice 64
+				replaceitem block ~27 ~25 ~35 slot.container 8 carrot 64
+				replaceitem block ~27 ~25 ~35 slot.container 8 salmon 64
+			fill ~27 ~25 ~43   ~27 ~25 ~44 chest 4
+				replaceitem block ~27 ~25 ~43 slot.container 0 coal 64 
+				replaceitem block ~27 ~25 ~43 slot.container 1 wood 64 
+				replaceitem block ~27 ~25 ~43 slot.container 2 beef 64
+				replaceitem block ~27 ~25 ~43 slot.container 3 cod 64
+				replaceitem block ~27 ~25 ~43 slot.container 4 apple 64
+				replaceitem block ~27 ~25 ~43 slot.container 5 bread 64
+				replaceitem block ~27 ~25 ~43 slot.container 6 potato 64
+				replaceitem block ~27 ~25 ~43 slot.container 7 melon_slice 64
+				replaceitem block ~27 ~25 ~43 slot.container 8 carrot 64
+				replaceitem block ~27 ~25 ~43 slot.container 8 salmon 64
+
+	# Floor: 4 - WEST
+		# Outer wall 
+			fill ~51 ~25 ~35   ~51 ~25  ~44 iron_block 
+			fill ~51 ~25 ~39   ~51 ~25  ~40 air
+			fill ~51 ~26 ~35   ~51 ~26  ~44 stained_glass  ["color": "green"]
+			fill ~51 ~26 ~37   ~51 ~26  ~42 air
+		# North wall
+			fill ~51 ~25 ~34   ~54 ~25  ~34 iron_block 
+			fill ~51 ~26 ~34   ~54 ~26  ~34 stained_glass  ["color": "green"]
+			fill ~52 ~25 ~38   ~52 ~25 ~38 iron_block 		
+			fill ~55 ~25 ~39   ~55 ~25 ~40 ochre_froglight
+			
+		# South wall
+			fill ~51 ~25 ~45   ~54 ~25  ~45 iron_block 
+			fill ~51 ~26 ~45   ~54 ~26  ~45 stained_glass  ["color": "green"]
+			fill ~52 ~25 ~41   ~52 ~25 ~41 iron_block 
+			fill ~55 ~25 ~44   ~55 ~25 ~44 ochre_froglight
+
+		# Furnaces
+			fill ~54 ~25 ~35   ~54 ~25  ~35 furnace 0
+			fill ~54 ~25 ~44   ~54 ~25  ~44 furnace 2
+			
+		# Chests - direction 5 for west diner, 4 for east diner
+			fill ~52 ~25 ~35   ~52 ~25 ~36 chest 5
+				replaceitem block ~52 ~25 ~35 slot.container 0 coal 64 
+				replaceitem block ~52 ~25 ~35 slot.container 1 wood 64 
+				replaceitem block ~52 ~25 ~35 slot.container 2 beef 64
+				replaceitem block ~52 ~25 ~35 slot.container 3 cod 64
+				replaceitem block ~52 ~25 ~35 slot.container 4 apple 64
+				replaceitem block ~52 ~25 ~35 slot.container 5 bread 64
+				replaceitem block ~52 ~25 ~35 slot.container 6 potato 64
+				replaceitem block ~52 ~25 ~35 slot.container 7 melon_slice 64
+				replaceitem block ~52 ~25 ~35 slot.container 8 carrot 64
+				replaceitem block ~52 ~25 ~35 slot.container 8 salmon 64
+			fill ~52 ~25 ~43   ~52 ~25 ~44 chest 5
+				replaceitem block ~52 ~25 ~43 slot.container 0 coal 64 
+				replaceitem block ~52 ~25 ~43 slot.container 1 wood 64 
+				replaceitem block ~52 ~25 ~43 slot.container 2 beef 64
+				replaceitem block ~52 ~25 ~43 slot.container 3 cod 64
+				replaceitem block ~52 ~25 ~43 slot.container 4 apple 64
+				replaceitem block ~52 ~25 ~43 slot.container 5 bread 64
+				replaceitem block ~52 ~25 ~43 slot.container 6 potato 64
+				replaceitem block ~52 ~25 ~43 slot.container 7 melon_slice 64
+				replaceitem block ~52 ~25 ~43 slot.container 8 carrot 64
+				replaceitem block ~52 ~25 ~43 slot.container 8 salmon 64
+				
+				
+
+# END: Diners
+
+# START:  Dungeon !!!
+
+	# START: level 1
+		# START: encounter area # 1 - entrance from stairs under alter to first level
+			fill ~37 ~-1 ~47	~69 ~-14 ~83  deepslate
+			fill ~37 ~-15 ~47	~69 ~-34 ~83  deepslate
+			
+			fill ~40 ~-1 ~55	~47 ~-7 ~62  air
+			fill ~47 ~-6 ~62	~47 ~-6 ~62 torch 
+			
+			fill ~47 ~-6 ~55	~47 ~-6 ~55 torch
+			fill ~40 ~-4 ~62	~40 ~-4 ~62 torch
+			
+			# west stairwell wall
+			fill ~41 ~-7 ~55	~41 ~2 ~60 quartz_block
+			# east stairwell wall
+			fill ~39 ~0 ~55		~39 ~2 ~60 quartz_block
+			
+			fill ~40 ~-7 ~55	~40 ~-1 ~55 quartz_block
+			
+			fill ~40 ~-7 ~56	~40 ~-2 ~56 quartz_block
+			fill ~40 ~-1 ~56	~40 ~-1 ~56 quartz_stairs 3
+			
+			fill ~40 ~-7 ~57	~40 ~-3 ~57 quartz_block
+			fill ~40 ~-2 ~57	~40 ~-2 ~57 quartz_stairs 3
+			
+			fill ~40 ~-7 ~58	~40 ~-4 ~58 quartz_block
+			fill ~40 ~-3 ~58	~40 ~-3 ~58 quartz_stairs 3
+			
+			fill ~40 ~-7 ~59	~40 ~-5 ~59 quartz_block
+			fill ~40 ~-4 ~59	~40 ~-4 ~59 quartz_stairs 3
+			
+			fill ~40 ~-7 ~60	~40 ~-6 ~60 quartz_block
+			fill ~40 ~-5 ~60	~40 ~-5 ~60 quartz_stairs 3
+			
+			fill ~40 ~-7 ~61	~40 ~-7 ~61 quartz_block
+			fill ~40 ~-6 ~61	~40 ~-6 ~61 quartz_stairs 3
+			
+			fill ~40 ~-7 ~62	~40 ~-7 ~62 quartz_stairs 3
+			fill ~40 ~-7 ~63	~41 ~-5 ~63 air
+			
+			# START: mobs
+				# fill ~40 ~-1 ~55	~47 ~-7 ~62  air
+				summon zombie ~42 ~-7 ~57
+				summon zombie ~43 ~-7 ~57
+				summon zombie ~44 ~-7 ~57
+				summon zombie ~45 ~-7 ~57
+			# END: mobs
+			
+			
+			#exit from area #1
+			fill ~48 ~-7 ~58	~49 ~-6 ~59 air
+			#fill ~49 ~-5 ~58	~49 ~-5 ~58 torch
+			setblock ~48 ~-7 ~58  spruce_door ["direction": 0,"door_hinge_bit":false]
+			setblock ~48 ~-7 ~59  spruce_door ["direction": 0,"door_hinge_bit":true]	
+			
+			
+			
+		# END: encounter area # 1 - entrance from stairs under alter to first level
+
+		# START: encounter area # 2 -
+			fill ~50 ~-1 ~55	~57 ~-7 ~62  air
+
+			fill ~50 ~-4 ~62	~50 ~-4 ~62 torch
+			fill ~57 ~-4 ~62	~57 ~-4 ~62 torch
+
+
+			# START: mobs
+				# fill ~50 ~-1 ~55	~57 ~-7 ~62  air
+				summon spider ~52 ~-7 ~57
+				summon spider ~53 ~-7 ~57
+				summon spider ~54 ~-7 ~57
+				summon spider ~55 ~-7 ~57
+				
+			# END: mobs
+
+
+			#exit from area #2
+			fill ~58 ~-7 ~58	~59 ~-6 ~59 air
+
+			
+			setblock ~58 ~-7 ~58  spruce_door ["direction": 0,"door_hinge_bit":false]
+			setblock ~58 ~-7 ~59  spruce_door ["direction": 0,"door_hinge_bit":true]	
+
+		# END: encounter area # 2 -
+		
+		# START: encounter area # 3-
+			fill ~60 ~-1 ~55	~67 ~-7 ~62  air
+			
+			fill ~60 ~-4 ~62	~60 ~-4 ~62 torch
+			fill ~67 ~-4 ~62	~67 ~-4 ~62 torch
+			
+			#exit from area #3
+			fill ~63 ~-7 ~63	~64 ~-6 ~64 air
+			
+			setblock ~63 ~-7 ~63  spruce_door ["direction": 1,"door_hinge_bit":true]
+			setblock ~64 ~-7 ~63  spruce_door ["direction": 1,"door_hinge_bit":false]
+			
+			
+			# START: mobs
+				# fill ~50 ~-1 ~55	~57 ~-7 ~62  air
+				summon spider ~62 ~-7 ~57
+				summon zombie ~63 ~-7 ~57
+				summon zombie ~64 ~-7 ~57
+				summon spider ~65 ~-7 ~57
+				summon skeleton ~66 ~-7 ~57
+				summon skeleton ~67 ~-7 ~57
+			# END: mobs			
+			
+			
+		# END: encounter area # 3 -	
+		
+		# START: encounter area # 4-
+			fill ~60 ~-1 ~65	~67 ~-7 ~72  air
+			
+			fill ~67 ~-5 ~72	~67 ~-5 ~72 torch 
+			fill ~60 ~-5 ~72	~60 ~-5 ~72 torch 
+			
+			# START: mobs
+				# fill ~50 ~-1 ~55	~57 ~-7 ~62  air
+				summon spider ~51 ~-7 ~55
+				summon zombie ~53 ~-7 ~56
+				summon zombie ~54 ~-7 ~57
+				summon spider ~55 ~-7 ~58
+				summon skeleton ~56 ~-7 ~59
+				summon skeleton ~57 ~-7 ~60
+			# END: mobs					
+			
+			
+			#exit from area #4
+			fill ~63 ~-7 ~73	~64 ~-6 ~74 air
+			setblock ~63 ~-7 ~73  spruce_door ["direction": 1,"door_hinge_bit":true]
+			setblock ~64 ~-7 ~73  spruce_door ["direction": 1,"door_hinge_bit":false]
+			
+
+		# END: encounter area # 4 -	
+
+		# START: encounter area # 5-
+			fill ~60 ~-1 ~75	~67 ~-7 ~82  air
+			
+			fill ~67 ~-5 ~82	~67 ~-5 ~82 torch 
+			fill ~67 ~-5 ~78	~67 ~-5 ~78 torch 
+
+				summon pillager ~61 ~-7 ~75
+				summon pillager ~62 ~-7 ~76
+				summon pillager ~63 ~-7 ~77
+				summon pillager ~64 ~-7 ~78
+				summon pillager ~65 ~-7 ~79
+
+			
+			#exit from area #5
+			fill ~59 ~-7 ~78	~58 ~-6 ~79 air
+			
+			setblock ~59 ~-7 ~78  spruce_door ["direction": 2,"door_hinge_bit":true] replace
+			setblock ~59 ~-7 ~79  spruce_door ["direction": 2,"door_hinge_bit":false] replace
+
+		# END: encounter area # 5 -	
+		
+		# START:  encounter area #6 
+			fill ~38 ~-7 ~65	~57 ~-1 ~82	  air
+			fill ~38 ~-1 ~65	~57 ~-1 ~82	  deepslate
+
+			# back and front walls
+				# back wall 
+				fill ~38 ~-5 ~65	~38 ~-5 ~82 torch
+				# front wall
+				fill ~57 ~-5 ~65	~57 ~-5 ~82 torch
+			
+			# left and right walls 
+				# right
+				fill ~38 ~-5 ~65	~57 ~-5 ~65 torch
+				# left
+				fill ~38 ~-5 ~82	~57 ~-5 ~82 torch
+			    
+			# stairwell border
+				fill ~40 ~-7 ~66	~46 ~-1 ~66 quartz_block
+				fill ~46 ~-7 ~65	~46 ~-1 ~65 quartz_block
+
+			# Mobs
+				summon pillager ~40 ~-7 ~75
+				summon pillager ~42 ~-7 ~76
+				summon pillager ~43 ~-7 ~77
+				summon pillager ~44 ~-7 ~78
+				summon pillager ~45 ~-7 ~79
+				summon pillager ~46 ~-7 ~79
+				summon pillager ~47 ~-7 ~79
+			
+			# X     X 
+			#  X   X
+			#  XXXXX
+			#  XXXXX
+			#   XXX
+			#    X
+			
+			fill ~38 ~-15 ~65	~45 ~-8 ~65	  air
+		# END:  encounter area #6 
+
+	#END:  level 1
+
+
+	# START: level 2
+		# START: encounter area # 12 	
+			fill ~40 ~-9 ~55	~47 ~-15 ~62  air
+			
+			# nasty floor
+				fill ~40 ~-16 ~55	~47 ~-16 ~62 deepslate
+				fill ~48 ~-16 ~55	~49 ~-16 ~62 deepslate
+				fill ~50 ~-16 ~55	~57 ~-16 ~62 deepslate
+			
+			# nasty wall 
+			#	fill ~40 ~-9 ~62	~47 ~-15 ~62  glow_lichen
+				
+			# with a well... sort of
+				fill ~41 ~-16 ~57	~44 ~-30 ~60 air
+				fill ~41 ~-16 ~57	~44 ~-30 ~60 water
+				#fill ~41 ~-30 ~61	~41 ~-30 ~61 ochre_froglight
+			
+			# side water tunnel bottom layer
+			#DTM 
+			#	fill ~37 ~-1 ~47	~69 ~-14 ~83  stonebrick
+			#	fill ~37 ~-15 ~47	~69 ~-34 ~83  stonebrick
+				fill ~41 ~-28 ~61	~44 ~-31 ~65 air
+				fill ~41 ~-28 ~61	~44 ~-31 ~65 water
+				#	fill ~41 ~-30 ~66	~41 ~-30 ~66 ochre_froglight
+				fill ~43 ~-29 ~66	~45 ~-32 ~67 air
+				fill ~43 ~-29 ~66	~45 ~-32 ~67 water
+				#	
+				fill ~44 ~-29 ~67	~50 ~-32 ~70 air
+				fill ~44 ~-29 ~67	~50 ~-32 ~70 water
+				#	
+				fill ~49 ~-17 ~68	~68 ~-33 ~82 air
+				fill ~49 ~-17 ~68	~68 ~-33 ~82 water
+				# wall above opening
+				# fill ~49 ~-20 ~68	~49 ~-20 ~82 verdant_froglight
+				# wall opposite opening
+				fill ~65 ~-22 ~74	~68 ~-24 ~76 stone 2
+				fill ~66 ~-21 ~73	~66 ~-25 ~77 stone 2
+				
+				fill ~65 ~-23 ~75	~68 ~-23 ~75 ochre_froglight
+				fill ~67 ~-17 ~75	~67 ~-33 ~75 stained_glass ["color": "light_blue"]
+				fill ~67 ~-23 ~68	~67 ~-23 ~82 stained_glass ["color": "light_blue"]
+				
+				
+				# wall near opening
+				fill ~49 ~-22 ~74	~52 ~-24 ~76 stone 2
+				fill ~51 ~-21 ~73	~51 ~-25 ~77 stone 2
+				
+				fill ~49 ~-23 ~75	~52 ~-23 ~75 ochre_froglight
+				fill ~50 ~-17 ~75	~50 ~-33 ~75 stained_glass ["color": "light_blue"]
+				fill ~50 ~-23 ~68	~50 ~-23 ~82 stained_glass ["color": "light_blue"]
+				
+				
+				summon elder_guardian "Rover" ~60 ~-23 ~75
+				summon guardian "Sparky" ~60 ~-25 ~75
+				summon guardian "Noodles" ~60 ~-27 ~75
+				summon guardian "Roger" ~60 ~-28 ~75
+				
+				# fill ~49 ~-17 ~68		~68 ~-33 ~82 air
+			
+				# near wall			
+					fill ~53 ~-33 ~70	~53 ~-29 ~80 stone 2
+					
+					fill ~53 ~-32 ~72	~53 ~-30 ~74 water
+					fill ~53 ~-32 ~76	~53 ~-30 ~78 water
+				# far wall
+					fill ~64 ~-33 ~70	~64 ~-29 ~80 stone 2
+					
+					fill ~64 ~-32 ~72	~64 ~-30 ~74 water
+					fill ~64 ~-32 ~76	~64 ~-30 ~78 water
+				# left wall
+					fill ~53 ~-33 ~70	~64 ~-29 ~70 stone 2
+					
+					fill ~55 ~-32 ~70	~57 ~-30 ~70 water
+					fill ~60 ~-32 ~70	~62 ~-30 ~70 water
+				# right wall
+					fill ~53 ~-33 ~80	~64 ~-29 ~80 stone 2
+
+					fill ~55 ~-32 ~80	~57 ~-30 ~80 water
+					fill ~60 ~-32 ~80	~62 ~-30 ~80 water					
+					
+				# four corners (outer)
+					fill ~53 ~-33 ~70	~53 ~-29 ~70 blackstone
+					fill ~53 ~-33 ~80	~53 ~-29 ~80 blackstone
+					fill ~64 ~-33 ~70	~64 ~-29 ~70 blackstone
+					fill ~64 ~-33 ~80	~64 ~-29 ~80 blackstone
+
+				# ceiling
+					fill ~53 ~-29 ~75  	~64 ~-29 ~75 stone 2
+					fill ~58 ~-29 ~70  	~59 ~-29 ~80 stone 2
+				
+				# dias
+					#fill ~56 ~-33 ~68	~66 ~-33 ~72 blackstone 
+					#fill ~57 ~-32 ~69	~65 ~-32 ~71 stone 2 
+					#fill ~58 ~-31 ~70	~64 ~-31 ~70 blackstone
+					#fill ~60 ~-30 ~70	~62 ~-30 ~70 chest
+					
+					fill ~57 ~-33 ~74  	~60 ~-33 ~76 blackstone
+					fill ~58 ~-32 ~75  	~59 ~-32 ~75 stone 2
+					fill ~58 ~-31 ~75  	~58 ~-31 ~75 ochre_froglight
+					fill ~59 ~-31 ~75  	~59 ~-31 ~75 chest 5
+						replaceitem block ~59 ~-31 ~75 slot.container 0 emerald 64 
+						replaceitem block ~59 ~-31 ~75 slot.container 1 emerald 64 
+						replaceitem block ~59 ~-31 ~75 slot.container 2 emerald 64 
+						replaceitem block ~59 ~-31 ~75 slot.container 3 emerald 64 
+						replaceitem block ~59 ~-31 ~75 slot.container 4 trident
+				
+				# 70,80 -  72,78 - 74,76   [75]
+			# critters.  Gotta have us some critters.
+				summon glow_squid "Archibald" ~42 ~-16 ~59
+				summon glow_squid "Amy" ~42 ~-20 ~59
+				
+			# Squid sculpture
+			# ~40 ~-9 ~62  ---- upper left
+			# ~40 ~-9 ~55  ---- upper right
+			#  01234567
+			# 0   XX         # -9
+			# 1  XXXX        # -10
+			# 2  XXXX	     # -11
+			# 3  OXXO	     # -12
+			# 4   XX         # -13
+			#-5XXXXXXXX---   # -14
+			# 6X X X X       # -15
+			# 
+				# fill ~40 ~-9 ~62	~40 ~-9 ~62  	pearlescent_froglight
+				# fill ~40 ~-9 ~55	~40 ~-9 ~55  	verdant_froglight
+				fill ~40 ~-9 ~59	~40 ~-9 ~58	stone 1
+				fill ~40 ~-10 ~60	~40 ~-10 ~57	stone 1
+				fill ~40 ~-11 ~60	~40 ~-11 ~57	stone 1
+				# eye row
+				fill ~40 ~-12 ~59	~40 ~-12 ~58	stone 1
+				fill ~40 ~-12 ~57	~40 ~-12 ~57	ochre_froglight
+				fill ~40 ~-12 ~60	~40 ~-12 ~60	ochre_froglight
+				# just before the arms and tentacles
+				fill ~40 ~-13 ~59	~40 ~-13 ~58	stone 1
+				# now onto the tentacles
+				fill ~40 ~-14 ~55	~40 ~-14 ~62	stone 1
+				# last backwall arm row
+				fill ~40 ~-15 ~55	~42 ~-15 ~55	stone 1
+				fill ~40 ~-15 ~57	~41 ~-15 ~57	stone 1
+				
+				fill ~40 ~-15 ~59	~41 ~-15 ~59	stone 1
+				fill ~40 ~-15 ~61	~46 ~-15 ~61	stone 1
+				#
+				fill ~41 ~-15 ~60	~41 ~-20 ~60	stone 1
+				fill ~41 ~-15 ~59	~41 ~-20 ~59	stone 1
+				fill ~41 ~-15 ~57	~41 ~-20 ~57	stone 1
+				
+				#long tentacles
+					# pair 1
+						fill ~40 ~-14 ~55	~40 ~-10 ~55	stone 1
+						fill ~40 ~-14 ~62	~40 ~-10 ~62	stone 1
+						#
+						fill ~41 ~-10 ~55	~43 ~-10 ~55	stone 1
+						fill ~41 ~-10 ~62	~43 ~-10 ~62	stone 1
+						#
+						#fill ~43 ~-11 ~55	~46 ~-11 ~55	stone 1
+						#fill ~43 ~-11 ~62	~46 ~-11 ~62	stone 1
+					# pair 2			
+						fill ~40 ~-15 ~55	~41 ~-15 ~55	stone 1
+						fill ~40 ~-15 ~62	~41 ~-15 ~62	stone 1
+						#
+						fill ~41 ~-14 ~55	~43 ~-14 ~55	stone 1
+						fill ~41 ~-14 ~62	~43 ~-14 ~62	stone 1
+						#
+						fill ~43 ~-13 ~55	~46 ~-13 ~55	stone 1
+						fill ~43 ~-13 ~62	~46 ~-13 ~62	stone 1			
+					# pair 3			
+						fill ~40 ~-15 ~55	~47 ~-15 ~55	stone 1
+						fill ~40 ~-15 ~62	~47 ~-15 ~62	stone 1
+		
+			# mobs
+				summon pillager "Freddy the Squid Worshiper #1" ~43 ~-15 ~57
+				summon pillager "Freddy the Squid Worshiper #2" ~44 ~-15 ~55
+				summon pillager "Freddy the Squid Worshiper #3"~45 ~-15 ~55	
+						
+			#exit from area #12
+			fill ~48 ~-15 ~58	~49 ~-14 ~59 air
+			#fill ~49 ~-13 ~58	~49 ~-13 ~58 torch
+			
+
+		# fill ~47 ~-15 ~61 ~41~-15 ~62 deepslate
+		# fill ~47 ~-14 ~62 ~40 ~-14 ~62 ochre_froglight
+		setblock ~47 ~-15 ~61 chest  ["facing_direction": 2]
+				replaceitem block ~47 ~-15 ~61 slot.container 0 trident 10 
+				replaceitem block ~47 ~-15 ~61 slot.container 1 trident 11
+				replaceitem block ~47 ~-15 ~61 slot.container 2 trident 12
+				replaceitem block ~47 ~-15 ~61 slot.container 3 trident 64
+				replaceitem block ~47 ~-15 ~61 slot.container 4 lingering_potion 5 33
+				replaceitem block ~47 ~-15 ~61 slot.container 5 lingering_potion 24 20
+				replaceitem block ~47 ~-15 ~61 slot.container 6 lingering_potion 5 33
+				replaceitem block ~47 ~-15 ~61 slot.container 7 lingering_potion 24 20
+				replaceitem block ~47 ~-15 ~61 slot.container 8 lingering_potion 5 33
+				replaceitem block ~47 ~-15 ~61 slot.container 9 lingering_potion 24 20
+				replaceitem block ~47 ~-15 ~61 slot.container 10 lingering_potion 5 33
+				replaceitem block ~47 ~-15 ~61 slot.container 11 lingering_potion 24 20
+				replaceitem block ~47 ~-15 ~61 slot.container 12 lingering_potion 5 33
+				replaceitem block ~47 ~-15 ~61 slot.container 13 lingering_potion 24 20
+				replaceitem block ~47 ~-15 ~61 slot.container 14 lingering_potion 5 33
+				replaceitem block ~47 ~-15 ~61 slot.container 15 lingering_potion 24 20
+				replaceitem block ~47 ~-15 ~61 slot.container 16 lingering_potion 5 33
+				replaceitem block ~47 ~-15 ~61 slot.container 17 lingering_potion 24 20
+				replaceitem block ~47 ~-15 ~61 slot.container 18 lingering_potion 5 33
+				replaceitem block ~47 ~-15 ~61 slot.container 19 lingering_potion 24 20
+
+
+			fill  ~48 ~-9 ~56  ~49 ~-15 ~61 air
+			# setblock ~48 ~-15 ~58  spruce_door ["direction": 0,"door_hinge_bit":false]
+			#setblock ~48 ~-15 ~59  spruce_door ["direction": 0,"door_hinge_bit":true]	
+			
+		# END: encounter area # 12 
+
+		# START: encounter area # 11-
+			fill ~50 ~-9 ~55	~57 ~-15 ~62  air
+			#fill ~57 ~-14 ~62	~57 ~-14 ~62 torch 
+			
+			#fill ~57 ~-14 ~55	~57 ~-14 ~55 torch
+			fill ~50 ~-12 ~62	~50 ~-12 ~62 torch
+
+			# mobs
+				summon pillager "Oliver the Wicked" ~53 ~-15 ~57
+				summon pillager "Garry the Gassy" ~54 ~-15 ~58
+				summon pillager "Walter the Indecisive.  I guess." ~55 ~-15 ~59	
+
+
+			#exit from area #11
+			fill ~58 ~-15 ~58	~59 ~-14 ~59 air
+			#fill ~59 ~-13 ~58	~59 ~-14 ~58 torch
+			setblock ~58 ~-15 ~58  spruce_door ["direction": 0,"door_hinge_bit":false]
+			setblock ~58 ~-15 ~59  spruce_door ["direction": 0,"door_hinge_bit":true]	
+
+		# END: encounter area # 11 -
+		
+		# START: encounter area # 10-
+			fill ~60 ~-9 ~55	~67 ~-15 ~62  air
+			fill ~60 ~-12 ~62	~60 ~-12 ~62 torch
+			
+			# mobs
+				summon pillager "My name is Ralph and I'm here to kill you" ~63 ~-15 ~57
+				summon pillager "My name is Tom and I'm just here to steal your stuff" ~64 ~-15 ~58
+				summon pillager "I'm Sally and I'm here to take your lunch money." ~65 ~-15 ~59	
+			
+			
+			#exit from area #10
+			fill ~63 ~-15 ~63	~64 ~-14 ~64 air
+			setblock ~63 ~-15 ~63  spruce_door ["direction": 1,"door_hinge_bit":true]
+			setblock ~64 ~-15 ~63  spruce_door ["direction": 1,"door_hinge_bit":false]
+			
+		# END: encounter area # 10 -	
+		
+		# START: encounter area # 9-
+			fill ~60 ~-9 ~65	~67 ~-15 ~72  air
+			fill ~67 ~-13 ~72	~67 ~-13 ~72 torch 
+			#exit from area #9
+			
+			# mobs
+				summon pillager "Hello my name is Bob" ~63 ~-15 ~68
+				summon pillager "My name is Dave" ~64 ~-15 ~69
+				summon pillager "Howdy I'm Dan" ~65 ~-15 ~70	
+		
+			
+			# panelling
+				fill ~60 ~-9 ~64	~67 ~-15 ~64  planks 5
+				fill ~60 ~-9 ~73	~67 ~-15 ~73  planks 5
+
+			fill ~67 ~-13 ~72	~67 ~-13 ~72 torch		
+			fill ~67 ~-10 ~72	~67 ~-10 ~72 torch
+			 
+			fill ~67 ~-13 ~65	~67 ~-13 ~65 torch			
+			fill ~67 ~-10 ~65	~67 ~-10 ~65 torch	
+
+			fill ~60 ~-12 ~65	~67 ~-12 ~72 planks 2
+			fill ~60 ~-12 ~65	~62 ~-10 ~67 air
+			
+			
+
+			fill ~63 ~-15 ~64	~64 ~-14 ~74 air
+			setblock ~63 ~-15 ~73  spruce_door ["direction": 1,"door_hinge_bit":true]
+			setblock ~64 ~-15 ~73  spruce_door ["direction": 1,"door_hinge_bit":false]
+
+			setblock ~67 ~-11 ~66 bed 3 replace 
+			setblock ~67 ~-11 ~67 bed 3 replace 
+	
+			setblock ~67 ~-11 ~68 chest  ["facing_direction": 4]
+				replaceitem block ~67 ~-11 ~68 slot.container 0 crossbow 10 
+				replaceitem block ~67 ~-11 ~68 slot.container 1 goat_horn 11
+				replaceitem block ~67 ~-11 ~68 slot.container 2 wolf_spawn_egg 7
+				replaceitem block ~67 ~-11 ~68 slot.container 3 bone 64
+				replaceitem block ~67 ~-11 ~68 slot.container 4 bone_meal 64
+				replaceitem block ~67 ~-11 ~68 slot.container 5 diamond 64
+				replaceitem block ~67 ~-11 ~68 slot.container 6 cat_spawn_egg 6
+				replaceitem block ~67 ~-11 ~68 slot.container 7 cod 64
+				replaceitem block ~67 ~-11 ~68 slot.container 8 emerald 14
+				# lingering 11 for regeneration==30 [28,29,30] are regeneration
+				replaceitem block ~67 ~-11 ~68 slot.container 8 lingering_potion 5 30
+				# [31,32,33] == Strength
+				replaceitem block ~67 ~-11 ~68 slot.container 9 lingering_potion 24 33
+				# [19,20] == water breathing
+				replaceitem block ~67 ~-11 ~68 slot.container 10 lingering_potion 24 20
+				
+				#replaceitem block ~67 ~-11 ~68 slot.container 11 cauldron 24 20
+# aka.ms/MinecraftUpdate --- 1.19.40 update
+# "/execute"
+# "setblockcommand"
+# Added the ability to set a custom block with a specific custom block property using the /setblock command
+# Added new overload to the /summon command that adds rotation arguments
+#  New overload is /summon [ spawnPos : x y z] [yRot: float] [xRot: float] [spawnEvent: string] [nametag: string]
+# https://gist.github.com/VideoCarp/eeaf915a2361d93f0fd8cf2c72d6db64
+# https://wiki.bedrock.dev/
+
+
+
+			# stairs
+				fill ~60 ~-15 ~66	~60 ~-15 ~66 stone_stairs 3
+				fill ~60 ~-15 ~65	~60 ~-15 ~65 stone
+				fill ~61 ~-15 ~65	~61 ~-15 ~65 stone
+			
+				fill ~61 ~-14 ~65	~61 ~-14 ~65 stone_stairs 0
+				fill ~62 ~-15 ~65	~62 ~-14 ~65 stone
+				
+				fill ~62 ~-15 ~66	~62 ~-14 ~66 stone
+				fill ~62 ~-13 ~66	~62 ~-13 ~66 stone_stairs 2 
+				fill ~62 ~-15 ~67	~62 ~-13 ~67 stone
+				fill ~62 ~-12 ~67	~62 ~-12 ~67 stone_stairs 2 
+
+		# END: encounter area # 9 -	
+
+		# START: encounter area # 8-
+			fill ~60 ~-9 ~75	~67 ~-15 ~82  air
+
+
+			fill ~60 ~-9 ~74	~67 ~-15 ~74  planks 5
+			fill ~60 ~-9 ~83	~67 ~-15 ~83  planks 5
+			
+			fill ~67 ~-13 ~82	~67 ~-13 ~82 torch		
+			fill ~67 ~-10 ~82	~67 ~-10 ~82 torch
+			 
+			fill ~67 ~-13 ~75	~67 ~-13 ~75 torch			
+			fill ~67 ~-10 ~75	~67 ~-10 ~75 torch	
+			
+			fill ~60 ~-12 ~75	~67 ~-12 ~82 planks 2
+			fill ~60 ~-12 ~75	~62 ~-10 ~77 air
+			
+			fill ~60 ~-13 ~78	~60 ~-13 ~79 planks 2
+			# stairs
+				fill ~60 ~-15 ~76	~60 ~-15 ~76 stone_stairs 3
+				fill ~60 ~-15 ~75	~60 ~-15 ~75 stone
+				fill ~61 ~-15 ~75	~61 ~-15 ~75 stone
+			
+				fill ~61 ~-14 ~75	~61 ~-14 ~75 stone_stairs 0
+				fill ~62 ~-15 ~75	~62 ~-14 ~75 stone
+				
+				fill ~62 ~-15 ~76	~62 ~-14 ~76 stone
+				fill ~62 ~-13 ~76	~62 ~-13 ~76 stone_stairs 2 
+				fill ~62 ~-15 ~77	~62 ~-13 ~77 stone
+				fill ~62 ~-12 ~77	~62 ~-12 ~77 stone_stairs 2 
+
+				setblock ~67 ~-11 ~76 bed 3 replace 
+				setblock ~67 ~-11 ~77 bed 3 replace 
+	
+			setblock ~67 ~-11 ~78 chest  ["facing_direction": 4]
+				replaceitem block ~67 ~-11 ~78 slot.container 0 netherite_sword 10 
+				replaceitem block ~67 ~-11 ~78 slot.container 1 netherite_chestplate 11
+				replaceitem block ~67 ~-11 ~78 slot.container 2 netherite_helmet 12
+				replaceitem block ~67 ~-11 ~78 slot.container 3 netherite_leggings 64
+				replaceitem block ~67 ~-11 ~78 slot.container 4 netherite_boots 64
+				replaceitem block ~67 ~-11 ~78 slot.container 5 netherite_pickaxe 64
+				replaceitem block ~67 ~-11 ~78 slot.container 6 netherite_boots 64
+				replaceitem block ~67 ~-11 ~78 slot.container 7 netherite_axe 64
+				# lingering 11 for regeneration==30 [28,29,30] are regeneration
+				replaceitem block ~67 ~-11 ~78 slot.container 8 lingering_potion 5 30
+				# [31,32,33] == Strength
+				replaceitem block ~67 ~-11 ~78 slot.container 9 lingering_potion 24 33
+				# [19,20] == water breathing
+				replaceitem block ~67 ~-11 ~78 slot.container 10 lingering_potion 24 20
+				
+				#replaceitem block ~67 ~-11 ~78 slot.container 11 item.banner.green.name 24 20
+				
+
+				
+				# https://minecraft.fandom.com/wiki/Lingering_Potion
+				# /replaceitem block ~1 ~0 ~1 slot.container 0 lingering_potion 23 30			
+
+			# corrections for prior room
+				fill ~63 ~-15 ~73	~64 ~-14 ~74 air
+				fill ~63 ~-15 ~73	~64 ~-14 ~74 air
+				setblock ~63 ~-15 ~73  spruce_door ["direction": 1,"door_hinge_bit":true]
+				setblock ~64 ~-15 ~73  spruce_door ["direction": 1,"door_hinge_bit":false]
+
+			# mobs
+				summon pillager "Fred" ~63 ~-15 ~78
+				summon pillager "Stinky Pete" ~64 ~-15 ~79
+				summon pillager "Artimus McScruffy" ~65 ~-15 ~80	
+			
+			#exit from area #8
+			fill ~59 ~-15 ~78	~58 ~-14 ~79 air
+
+		# END: encounter area # 8 -	
+		
+		# START:  encounter area #7 
+			fill ~57 ~-9 ~82	~38 ~-9 ~65  ochre_froglight
+			fill ~57 ~-10 ~82	~38 ~-15 ~65  air
+			fill ~57 ~-15 ~82	~38 ~-15 ~65  grass
+			
+			#fill ~57 ~-13 ~82	~57 ~-13 ~82 torch
+			# fill ~38 ~-13 ~65	~38 ~-13 ~65 torch
+ 
+			fill ~38 ~-8 ~65	~38 ~-8 ~65	 quartz_block		
+			
+			fill ~39 ~-15 ~65	~39 ~-9 ~65	 quartz_block
+			fill ~39 ~-8 ~65	~39 ~-8 ~65	 quartz_stairs 1
+
+			fill ~40 ~-15 ~65	~40 ~-10 ~65	 quartz_block
+			fill ~40 ~-9 ~65	~40 ~-9 ~65	 quartz_stairs 1
+			fill ~40 ~-8 ~65	~40 ~-8 ~65	 air
+
+			fill ~41 ~-15 ~65	~41 ~-11 ~65	 quartz_block
+			fill ~41 ~-10 ~65	~41 ~-10 ~65	 quartz_stairs 1
+			fill ~41 ~-9 ~65	~41 ~-9 ~65	 air
+
+			fill ~42 ~-15 ~65	~42 ~-12 ~65	 quartz_block
+			fill ~42 ~-11 ~65	~42 ~-11 ~65	 quartz_stairs 1
+			fill ~42 ~-10 ~65	~42 ~-9 ~65	 air
+
+			fill ~43 ~-15 ~65	~43 ~-13 ~65	 quartz_block
+			fill ~43 ~-12 ~65	~43 ~-12 ~65	 quartz_stairs 1
+			fill ~43 ~-11 ~65	~43 ~-9 ~65	 air
+
+			fill ~44 ~-15 ~65	~44 ~-14 ~65	 quartz_block
+			fill ~44 ~-13 ~65	~44 ~-13 ~65	 quartz_stairs 1
+			fill ~44 ~-12 ~65	~44 ~-9 ~65	 air
+
+			fill ~45 ~-15 ~65	~45 ~-15 ~65	 quartz_block
+			fill ~45 ~-14 ~65	~45 ~-14 ~65	 quartz_stairs 1
+			fill ~45 ~-13 ~65	~45 ~-9 ~65	 air
+
+			#fill ~45 ~-15 ~65	~45 ~-15 ~65	 quartz_stairs 1
+			#fill ~45 ~-14 ~65	~45 ~-9 ~65	 air
+
+			# START: mobs
+			# fill ~57 ~-15 ~82	~38 ~-15 ~65  grass
+			summon cow ~40 ~-14 ~70
+			summon cow ~42 ~-14 ~70			
+			summon cow ~44 ~-14 ~70			
+			summon cow ~46 ~-14 ~70			
+			summon cow ~48 ~-14 ~70			
+			summon cow ~50 ~-14 ~70			
+			summon cow ~52 ~-14 ~70			
+			summon cow ~54 ~-14 ~70			
+			summon cow ~56 ~-14 ~70			
+			# END: mobs
+
+			fill ~59 ~-15 ~78	~59 ~-13 ~79 air
+			fill ~58 ~-15 ~78	~58 ~-13 ~79 air			
+			
+			fill ~58 ~-15 ~79	~58 ~-15 ~78 stone_stairs 1 
+			
+			setblock ~59 ~-15 ~78  spruce_door ["direction": 2,"door_hinge_bit":true] replace
+			setblock ~59 ~-15 ~79  spruce_door ["direction": 2,"door_hinge_bit":false] replace
+			
+		# END:  encounter area #7 
+
+	#END:  level 2
+
+
+	#START: level 3
+		# START: encounter area # 1 - entrance from stairs under alter to first level	
+			
+		# END: encounter area # 1 - entrance from stairs under alter to first level
+	
+	# END:  level 3
+
+# 2378,92,93	
+# END:  Dungeon !!!
+
+
+# START: Entry and other trinkets
+setblock ~33 ~2 ~15 chest  ["facing_direction": 1]
+	replaceitem block ~33 ~2 ~15 slot.container 0 bone_meal 64  
+	replaceitem block ~33 ~2 ~15 slot.container 1 iron_block 5
+	replaceitem block ~33 ~2 ~15 slot.container 2 carved_pumpkin
+	replaceitem block ~33 ~2 ~15 slot.container 3 melon_seeds 64
+	replaceitem block ~33 ~2 ~15 slot.container 4 wheat_seeds 64
+	# replaceitem block ~33 ~2 ~15 slot.container 5 pumpkin_seeds
+	# replaceitem block ~33 ~2 ~15 slot.container 6 beetroot_seeds
+	#DTM
+	
+	
+setblock ~46 ~2 ~15 chest  ["facing_direction": 1]
+	replaceitem block ~46 ~2 ~15 slot.container 0 bone_meal 64 	
+	replaceitem block ~46 ~2 ~15 slot.container 1 iron_block 5
+	replaceitem block ~46 ~2 ~15 slot.container 2 carved_pumpkin 5
+	replaceitem block ~46 ~2 ~15 slot.container 3 pumpkin_seeds 64
+	replaceitem block ~46 ~2 ~15 slot.container 4 beetroot_seeds 64
+	
+	
+	# Master suites
+	setblock ~35 ~29 ~27 chest  ["facing_direction": 5]
+		replaceitem block ~35 ~29 ~27 slot.container 0 crossbow  
+		replaceitem block ~35 ~29 ~27 slot.container 1 goat_horn 5
+		replaceitem block ~35 ~29 ~27 slot.container 2 flint 24
+		replaceitem block ~35 ~29 ~27 slot.container 3 flint_and_steel 24
+		replaceitem block ~35 ~29 ~27 slot.container 4 quartz_block 64
+		replaceitem block ~35 ~29 ~27 slot.container 5 quartz_stairs 64
+		replaceitem block ~35 ~29 ~27 slot.container 6 arrow 64
+		replaceitem block ~35 ~29 ~27 slot.container 7 blackstone 64
+		replaceitem block ~35 ~29 ~27 slot.container 8 elytra 10
+		
+	setblock ~35 ~21 ~27 chest  ["facing_direction": 5]
+		replaceitem block ~35 ~21 ~27 slot.container 0 crossbow  
+		replaceitem block ~35 ~21 ~27 slot.container 1 goat_horn 5
+		replaceitem block ~35 ~21 ~27 slot.container 2 flint 24
+		replaceitem block ~35 ~21 ~27 slot.container 3 flint_and_steel 24
+		replaceitem block ~35 ~21 ~27 slot.container 4 quartz_block 64
+		replaceitem block ~35 ~21 ~27 slot.container 5 quartz_stairs 64
+		replaceitem block ~35 ~21 ~27 slot.container 6 arrow 64
+		replaceitem block ~35 ~21 ~27 slot.container 7 blackstone 64
+
+	setblock ~35 ~13 ~27 chest  ["facing_direction": 5]
+		replaceitem block ~35 ~13 ~27 slot.container 0 crossbow  
+		replaceitem block ~35 ~13 ~27 slot.container 1 goat_horn 5
+		replaceitem block ~35 ~13 ~27 slot.container 2 flint 24
+		replaceitem block ~35 ~13 ~27 slot.container 3 flint_and_steel 24
+		replaceitem block ~35 ~13 ~27 slot.container 4 quartz_block 64
+		replaceitem block ~35 ~13 ~27 slot.container 5 quartz_stairs 64
+		replaceitem block ~35 ~13 ~27 slot.container 6 arrow 64
+		replaceitem block ~35 ~13 ~27 slot.container 7 blackstone 64
+		
+		
+		#replaceitem block ~67 ~-11 ~68 slot.container 2 wolf_spawn_egg 7
+		#replaceitem block ~67 ~-11 ~68 slot.container 3 bone 64
+		#replaceitem block ~67 ~-11 ~68 slot.container 4 bone_meal 64
+		#replaceitem block ~67 ~-11 ~68 slot.container 5 diamond 64
+		#replaceitem block ~67 ~-11 ~68 slot.container 6 cat_spawn_egg 6
+		#replaceitem block ~67 ~-11 ~68 slot.container 7 cod 64
+		#replaceitem block ~67 ~-11 ~68 slot.container 8 emerald 14
+		# lingering 11 for regeneration==30 [28,29,30] are regeneration
+		#replaceitem block ~67 ~-11 ~68 slot.container 8 lingering_potion 5 30
+		# [31,32,33] == Strength
+		#replaceitem block ~67 ~-11 ~68 slot.container 9 lingering_potion 24 33
+		# [19,20] == water breathing
+		#replaceitem block ~67 ~-11 ~68 slot.container 10 lingering_potion 24 20
+	
+# END: Entry trinkets
+
+# Rooftop farms
+	# East
+		# back lot, east
+		fill ~16 ~33 ~46  ~23 ~33 ~54 farmland
+		fill ~16 ~33 ~35  ~23 ~33 ~44 farmland
+		fill ~16 ~33 ~25  ~23 ~33 ~33 farmland
+		
+		# N-S 1
+		fill ~15 ~33 ~46  ~15 ~33 ~54 planks 2
+		fill ~24 ~33 ~46  ~24 ~33 ~54 planks 2
+		
+		# N-S 2
+		fill ~15 ~33 ~35  ~15 ~33 ~44 planks 2
+		fill ~24 ~33 ~35  ~24 ~33 ~44 planks 2
+
+		# N-S 3
+		fill ~15 ~33 ~25  ~15 ~33 ~33 planks 2
+		fill ~24 ~33 ~25  ~24 ~33 ~33 planks 2
+
+		# Side park gardens
+			#South 
+				fill ~24 ~33 ~46  ~28 ~33 ~54 planks 2
+				fill ~25 ~33 ~47  ~27 ~33 ~53 grass
+				fill ~26 ~34 ~48  ~26 ~34 ~52 sapling 0
+			#Middle
+				fill ~24 ~33 ~35  ~28 ~33 ~44 planks 2
+				fill ~25 ~33 ~36  ~27 ~33 ~43 grass
+				fill ~26 ~34 ~37  ~26 ~34 ~42 sapling 1
+			#North 
+				fill ~24 ~33 ~25  ~28 ~33 ~33 planks 2
+				fill ~25 ~33 ~26  ~27 ~33 ~32 grass
+				fill ~26 ~34 ~27  ~26 ~34 ~31 sapling 2
+			
+			
+
+		# grass_path ???
+		
+		# E-W 	
+			fill ~16 ~33 ~55  ~23 ~33 ~55 planks 2
+			fill ~16 ~33 ~24  ~23 ~33 ~24 planks 2
+		
+		# Channels
+			# E-W
+				fill ~16 ~33 ~45  ~23 ~33 ~45 water
+				fill ~16 ~33 ~54  ~23 ~33 ~54 water
+				fill ~16 ~33 ~25  ~23 ~33 ~25 water
+				fill ~16 ~33 ~34  ~23 ~33 ~34 water
+
+			# bridges
+				fill ~15 ~34 ~34  ~24 ~34 ~34 planks 2
+					fill ~14 ~33 ~34 	~14 ~33 ~34 planks 2
+						fill ~14 ~33 ~35 	~14 ~33 ~35 composter
+						fill ~14 ~33 ~33 	~14 ~33 ~33 composter
+					fill ~25 ~33 ~34  	~25 ~33 ~34 planks 2
+						fill ~25 ~33 ~35 	~25 ~33 ~35 composter
+						fill ~25 ~33 ~33 	~25 ~33 ~33 composter
+					# EW Stairs
+						fill ~14 ~34 ~34 	~14 ~34 ~34 birch_stairs 0
+						fill ~13 ~33 ~34 	~13 ~33 ~34 birch_stairs 0
+						fill ~25 ~34 ~34 	~25 ~34 ~34 birch_stairs 1
+						fill ~26 ~33 ~34 	~26 ~33 ~34 birch_stairs 1
+					# NS Stairs
+						# east
+							fill ~17 ~34 ~33 	~18 ~34 ~33 birch_stairs 2
+							fill ~17 ~34 ~35 	~18 ~34 ~35 birch_stairs 3
+						# west
+							fill ~21 ~34 ~33 	~22 ~34 ~33 birch_stairs 2
+							fill ~21 ~34 ~35 	~22 ~34 ~35 birch_stairs 3
+#DTM			
+					
+				fill ~15 ~34 ~45  ~24 ~34 ~45 planks 2			
+					fill ~14 ~33 ~45 	~14 ~33 ~45 planks 2
+						fill ~14 ~33 ~46 	~14 ~33 ~46 composter
+						fill ~14 ~33 ~44 	~14 ~33 ~44 composter
+					fill ~25 ~33 ~45  	~25 ~33 ~45 planks 2
+						fill ~25 ~33 ~46 	~25 ~33 ~46 composter
+						fill ~25 ~33 ~44 	~25 ~33 ~44 composter
+					# EW Stairs
+						fill ~14 ~34 ~45 	~14 ~34 ~45 birch_stairs 0
+						fill ~13 ~33 ~45 	~13 ~33 ~45 birch_stairs 0
+						fill ~25 ~34 ~45 	~25 ~34 ~45 birch_stairs 1
+						fill ~26 ~33 ~45 	~26 ~33 ~45 birch_stairs 1
+					# NS Stairs
+						# east
+							fill ~17 ~34 ~44 	~18 ~34 ~44 birch_stairs 2
+							fill ~17 ~34 ~46 	~18 ~34 ~46 birch_stairs 3
+						# west
+							fill ~21 ~34 ~44 	~22 ~34 ~44 birch_stairs 2
+							fill ~21 ~34 ~46 	~22 ~34 ~46 birch_stairs 3
+							
+				summon villager "Deidre" ~24 ~34 ~44
+				summon villager "Momma Seal" ~24 ~34 ~46
+				
+			# N-S
+				fill ~16 ~33 ~25  ~16 ~33 ~54 water
+				fill ~23 ~33 ~25  ~23 ~33 ~54 water
+				fill ~19 ~33 ~25  ~20 ~33 ~54 water
+
+
+				
+
+	# West
+		# back lot, west
+		# fill ~56 ~33 ~46  ~63 ~33 ~54 farmland
+		# fill ~56 ~33 ~35  ~33 ~33 ~44 farmland
+	
+
+tp ~0 ~2 ~0
