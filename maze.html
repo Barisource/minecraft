@@ -1,0 +1,37 @@
+<html>
+<head>
+<script src="maze.js"></script>
+<title>Maze Generation Test Page</title>
+</head>
+<body>
+<center><div>
+<button onclick="var myCanvas = document.getElementById('myCanvas');
+var ctx = myCanvas.getContext('2d');
+ctx.fillRect(20, 20, 150, 100);
+myCanvas.style.height='800px';
+myCanvas.style.width='800px';
+var thisMaze;
+thisMaze=new Maze();
+thisMaze.loadTestMaze();
+thisMaze.renderMazeAsMineCraftScript();
+document.getElementById('functionScript').value=thisMaze.functionScript;
+return false;">Test Maze</button>
+
+<button onclick="
+var myCanvas = document.getElementById('myCanvas');
+var thisMaze;thisMaze=new Maze();
+thisMaze.intMazePopulateLoop();
+thisMaze.canvasId='myCanvas';
+thisMaze.canvasDrawMaze();
+thisMaze.intMazeToStringMaze();
+thisMaze.renderMazeAsMineCraftScript();
+document.getElementById('functionScript').value=thisMaze.functionScript;
+return false;">Maze</button>
+</div></center>
+<center><h3>Minecraft function script</h3></center>
+<center><textarea style="padding: 3em;margin: 1em;height: 10em;width: 80em;" id="functionScript">
+</textarea></center><br>
+<center><canvas style="border: 2px #808080 solid;" id="myCanvas" width="800" height="800"></canvas>
+</center>
+</body>
+</html>
