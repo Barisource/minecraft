@@ -20,7 +20,7 @@ The number in the middle represents how high or low a location is.  This number 
 
 The number to the right represents how far forward or backward (north or south) a location is.  This number is referred to as the “Z coordinate.”   The Z coordinate increases as you move toward the south.
 
-<h2>Origin></h2>  
+<h2>Origin</h2>  
 
 The very center of the world is called the “origin”.   This is the point at which the X, Y, and Z coordinates are all zero.   Typically, the Y value of zero is far below your character’s feet, but you could always tunnel down to check things out there if you wish.
 
