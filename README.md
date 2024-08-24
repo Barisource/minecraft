@@ -35,21 +35,21 @@ In the case of the z coordinate, anything forward / north of the origin is negat
 <h3>Absolute Coordinates</h3>
 
 The simplest and most direct way to refer to a position is in absolute terms.   This means that every player sees the same location the same way referring to the same spot in that world.   The origin is always (0, 0, 0) for all players.  A location typically in the sky but within sight of the origin might be something like (100, 200, -50) meaning 100 blocks to the east of the origin, 200 blocks above the origin, and and 50 blocks to the north of the origin.   Minecraft would want you to desribe this location as:
-<code>
-<b>100 200 -50</b>
-</code>
+```
+100 200 -50
+```
 
 <h3>Relative Coordinates</h3>
 
 Very frequently it is more helpful to think of coordinates in terms of how far something might be away from, or in other words, "<b>relative</b> to" the player.   When you are saying how far you would need to move in a given direction to get from where you are to where you want to be, you are talking about a relative distance.  When you are describing a relative difference, you put a special symbol called a tilde "~" in front of the coordinate number. For instance I might want to reference a location that is 25 blocks to my east, 10 blocks above me, and 100 blocks to my north.  Minecraft would want you to describe this location as:
-<code>
-<b>~25 ~10 ~-100</b>
-</code>
+```
+~25 ~10 ~-100
+```
 
 If I wanted to move the same amount down instead of up I would describe my desired location as:
-<code>
-<b>~25 ~-10 ~-100</b>
-</code>
+```
+~25 ~-10 ~-100
+```
 
 
 <h3>Mixing Absolute and Relative Coordinates</h3>
@@ -59,9 +59,9 @@ Perhaps I don't really want to go to the middle of the map, but I want go all th
 Breaking this down, I might explain to another person:  "I want to refer to a location that is neither east nor west of where I am.  I want that location to be as far up as I could possibly build.   Lastly, I want that location to be neither north or south of where I'm at."
 
 In this case, the desired coordinate would be:
-<code>
-<b>~0 320 ~0</b>
-</code>
+```
+~0 320 ~0
+```
 
 <h2>Teleport Command</h2>
 
@@ -70,9 +70,9 @@ If you have the ability to act as an operator in a world you may move immediatel
 A way to tell Minecraft what to do without using your mouse is to give the game typed instructions, called "<b>commands</b>".   Any time you are going to give Minecraft a command, you start by typing the diagonal line, called a "forward slash" or "slash" that starts in the lower left and moves to the lower right. (Meaning this symbol:  "<b>/</b>".) 
 
 Different commands make Minecraft do different things.   If you want to tell Minecraft to teleport your character you use the "tp" command.  For instance, if I was trapped underground and wanted to teleport my character to a location 100 blocks above my current position, I might issue the command:
-<code>
-<b>/tp ~0 ~100 ~0</b>
-</code>
+```
+/tp ~0 ~100 ~0
+```
 
 At this point, it might be helpful to practice using coordinates by using the teleport commnand to move your character around the map.  
 
