@@ -46,7 +46,10 @@ Perhaps I don't really want to go to the middle of the map, but I want go all th
 
 Breaking this down, I might explain to another person:  "I want to refer to a location that is neither east nor west of where I am.  I want that location to be as far up as I could possibly build.   Lastly, I want that location to be neither north or south of where I'm at."
 
-In this case, the desired coordinate would be "**~0 320 ~0**".
+In this case, the desired coordinate would be:
+<code>
+<b>~0 320 ~0</b>
+</code>
 
 <h2>Teleport Command</h2>
 
