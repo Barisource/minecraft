@@ -24,6 +24,13 @@ The number to the right represents how far forward or backward (north or south) 
 
 The very center of the world is called the “origin”.   This is the point at which the X, Y, and Z coordinates are all zero.   Typically, the Y value of zero is far below your character’s feet, but you could always tunnel down to check things out there if you wish.
 
+<h2>Negative Coordinates</h2>
+
+<h2>Absolute Coordinates</h2>
+
+<h2>Relative Coordinates</h2>
+
+
 <h2>SetBlock</h2>
 
 
@@ -36,3 +43,4 @@ The very center of the world is called the “origin”.   This is the point at 
 <h3>Stairs</h3>
 
 <h3>Doors</h3>
+
