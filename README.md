@@ -29,3 +29,10 @@ The very center of the world is called the “origin”.   This is the point at 
 
 <h2>Fill</h2>
 
+<h3>Normal Blocks</h3>
+
+<h3>Air</h3>
+
+<h3>Stairs</h3>
+
+<h3>Doors</h3>
