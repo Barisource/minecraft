@@ -41,10 +41,16 @@ The simplest and most direct way to refer to a position is in absolute terms.   
 
 <h3>Relative Coordinates</h3>
 
-Very frequently it is more helpful to think of coordinates in terms of how far something might be away from "<b>relative</b> to" the player.   When you are saying how far you would need to move in a given direction to get from where you are to where you want to be, you are talking about a relative distance.  When you are describing a relative difference, you put a special symbol called a tilde "~" in front of the coordinate number. For instance I might want to reference a location that is 25 blocks to my east, 10 blocks above me, and 100 blocks to my north.  Minecraft would want you to describe this location as:
+Very frequently it is more helpful to think of coordinates in terms of how far something might be away from, or in other words, "<b>relative</b> to" the player.   When you are saying how far you would need to move in a given direction to get from where you are to where you want to be, you are talking about a relative distance.  When you are describing a relative difference, you put a special symbol called a tilde "~" in front of the coordinate number. For instance I might want to reference a location that is 25 blocks to my east, 10 blocks above me, and 100 blocks to my north.  Minecraft would want you to describe this location as:
 <code>
-<b>~25 10 ~-100</b>
+<b>~25 ~10 ~-100</b>
 </code>
+
+If I wanted to move the same amount down instead of up I would describe my desired location as:
+<code>
+<b>~25 ~-10 ~-100</b>
+</code>
+
 
 <h3>Mixing Absolute and Relative Coordinates</h3>
 
