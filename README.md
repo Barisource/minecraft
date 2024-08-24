@@ -1,7 +1,7 @@
 # minecraft
 MineCraft Goodness
 
-What are coordinates?   
+<h2>What are coordinates?</h2>   
 Generally speaking, coordinates are a way to describe locations using numbers.    In Minecraft, we might see where our character is, create a block in a particular location, or describe where a player or mob is located.
 
 How do Minecraft coordinates work?
