@@ -68,6 +68,8 @@ Different commands make Minecraft do different things.   If you want to tell Min
 <b>/tp 0 ~100 0</b>
 </code>
 
+At this point, it might be helpful to practice using coordinates by using the teleport commnand to move your character around the map.  
+
 <h2>Different Block Types</h2>
 
 <h3>Normal Blocks</h3>
