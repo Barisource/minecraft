@@ -20,7 +20,7 @@ The number in the middle represents how high or low a location is.  This number 
 
 The number to the right represents how far forward or backward (north or south) a location is.  This number is referred to as the “Z coordinate.”   The Z coordinate increases as you move toward the south.
 
-Coordinates are sometimes written out by hand between opening and closing parentheses "(" and ")" when doing math or trying to indicate to another person that you are talking about a coordinate.  If you have learned about the idea of coordinates in a math class, you will probably have seen something like this betwore.  Minecraft doesn't understand this however and just wants to see three numbers with spaces between them.
+Coordinates are sometimes written out by hand between opening and closing parentheses "(" and ")" when doing math or trying to indicate to another person that you are using coordinates to specify a location.  If you have learned about the idea of coordinates in a math class, you will probably have seen something like this betwore.  Minecraft doesn't understand this however and just wants to see three numbers with spaces between them.
 
 <h3>Negative, Zero, and Positive Coordinates</h3>
 
@@ -34,11 +34,17 @@ In the case of the z coordinate, anything forward / north of the origin is negat
 
 <h3>Absolute Coordinates</h3>
 
-The simplest and most direct way to refer to a position is in absolute terms.   This means that every player sees the same coordinate the same way referring to the same spot in that world.   The origin is always (0, 0, 0) for all players.  A coordinate typically in the sky but within sight of the origin might be something like (100, 200, -50) meaning 100 blocks to the east of the origin, 200 blocks above the origin, and and 50 blocks to the north of the origin.
+The simplest and most direct way to refer to a position is in absolute terms.   This means that every player sees the same location the same way referring to the same spot in that world.   The origin is always (0, 0, 0) for all players.  A location typically in the sky but within sight of the origin might be something like (100, 200, -50) meaning 100 blocks to the east of the origin, 200 blocks above the origin, and and 50 blocks to the north of the origin.   Minecraft would want you to desribe this location as:
+<code>
+<b>100 200 -50</b>
+</code>
 
 <h3>Relative Coordinates</h3>
 
-Very frequently it is more helpful to think of coordinates in terms of how far something might be away from "<b>relative</b> to" the player.   For instance, .
+Very frequently it is more helpful to think of coordinates in terms of how far something might be away from "<b>relative</b> to" the player.   When you are saying how far you would need to move in a given direction to get from where you are to where you want to be, you are talking about a relative distance.  When you are describing a relative difference, you put a special symbol called a tilde "~" in front of the coordinate number. For instance I might want to reference a location that is 25 blocks to my east, 10 blocks above me, and 100 blocks to my north.  Minecraft would want you to describe this location as:
+<code>
+<b>~25 10 ~-100</b>
+</code>
 
 <h3>Mixing Absolute and Relative Coordinates</h3>
 
