@@ -30,6 +30,8 @@ The very center of the world is called the “origin”.   This is the point at 
 
 <h2>Relative Coordinates</h2>
 
+<h2>Teleport Command</h2>
+
 <h2>Different Block Types</h2>
 
 <h3>Normal Blocks</h3>
@@ -39,6 +41,7 @@ The very center of the world is called the “origin”.   This is the point at 
 <h3>Stairs</h3>
 
 <h3>Doors</h3>
+
 
 <h2>SetBlock Command</h2>
 
