@@ -65,7 +65,7 @@ A way to tell Minecraft what to do without using your mouse is to give the game 
 
 Different commands make Minecraft do different things.   If you want to tell Minecraft to teleport your character you use the "tp" command.  For instance, if I was trapped underground and wanted to teleport my character to a location 100 blocks above my current position, I might issue the command:
 <code>
-<b>/tp 0 ~100 0</b>
+<b>/tp ~0 ~100 ~0</b>
 </code>
 
 At this point, it might be helpful to practice using coordinates by using the teleport commnand to move your character around the map.  
