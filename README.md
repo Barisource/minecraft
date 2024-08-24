@@ -38,6 +38,15 @@ The simplest and most direct way to refer to a position is in absolute terms.   
 
 <h3>Relative Coordinates</h3>
 
+Very frequently it is more helpful to think of coordinates in terms of how far something might be away from "<b>relative</b> to" the player.   For instance, .
+
+<h3>Mixing Absolute and Relative Coordinates</h3>
+
+Perhaps I don't really want to go to the middle of the map, but I want go all the way to the top of the world above my current position.
+
+Breaking this down, I might explain to another person:  "I want to refer to a location that is neither east nor west of where I am.  I want that location to be as far up as I could possibly build.   Lastly, I want that location to be neither north or south of where I'm at."
+
+In this case, the desired coordinate would be "**~0 320 ~0**".
 
 <h2>Teleport Command</h2>
 
