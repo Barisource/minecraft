@@ -59,9 +59,9 @@ In this case, the desired coordinate would be:
 
 <h2>Teleport Command</h2>
 
-If you have the ability to act as an operator in a world you may move immediately from one location to another without traveling through locations in between where you start and where you end up.  You simply "teleport" to your destination.   You can specify a location using any mix of absolute and relative coordinates.
+If you have the ability to act as an operator in a world you may move immediately from one location to another.  When move like this, you don't move through locations in between where you start and where you end up.  You simply "teleport" to your destination.   You can specify a location using any mix of absolute and relative coordinates.
 
-To tell Minecraft what to do, you can type instructions, called "<b>commands</b>".   Any time you are going to give Minecraft a command, you start by typing the diagonal line, called a "forward slash" or "slash" that starts in the lower left and moves to the lower right, meaning this symbol:  "<b>/</b>". 
+A way to tell Minecraft what to do without using your mouse is to give the game typed instructions, called "<b>commands</b>".   Any time you are going to give Minecraft a command, you start by typing the diagonal line, called a "forward slash" or "slash" that starts in the lower left and moves to the lower right. (Meaning this symbol:  "<b>/</b>".) 
 
 Different commands make Minecraft do different things.   If you want to tell Minecraft to teleport your character you use the "tp" command.  For instance, if I was trapped underground and wanted to teleport my character to a location 100 blocks above my current position, I might issue the command:
 <code>
