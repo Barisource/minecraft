@@ -78,7 +78,18 @@ At this point, it might be helpful to practice using coordinates by using the te
 
 <h2>Different Block Types</h2>
 
+Every block has a name within minecraft.  Shown below are only a few types, representing a small fraction of what you doubtless already seen within the game.
+
 <h3>Normal Blocks</h3>
+
+Most blocks are simple things that take up all the space used at a given location.   Some of these names may include a character called an "underscore" ( _ ) that looks like an underline.   Any time you are referring to a block type by name make sure to include all characters within the name.
+
+<table>
+  <tr><th>Minecraft block name</th><th>Description</th></tr>
+  <tr><td>Rock</td><td>Plain Gray Rock</td></tr>
+  <tr><td>Dirt</td><td>Dirt.  Yep.  Just plain dirt.</td></tr>
+  <tr><td>Grass_Block</td><td>Grassy Dirt</td></tr>
+</table>
 
 <h3>Air</h3>
 
