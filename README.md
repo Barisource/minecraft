@@ -95,9 +95,14 @@ Most blocks are simple things that take up all the space used at a given locatio
 
 <h3>Air</h3>
 
+Air is more than something to breath in Minecraft- you can use a block type of "air" to replace a block of any type with open space.
+
 <h3>Stairs</h3>
 
-<h3>Doors</h3>
+Some block types in Minecraft are a bit more complicated.   Stairs for instance can face any of the four directions, may be corner stairs, and may even be upside down.  Upside down stairs are great for building roofs for instance.
+
+The block type of "oak_stairs" describes a simple set of stairs that will face you if you put them in by hand.   If you are giving Minecraft commands however you will need to be more specific.
+
 
 
 <h2>SetBlock Command</h2>
