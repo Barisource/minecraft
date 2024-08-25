@@ -30,7 +30,7 @@ In the case of the x coordinate, anything to the west / left of the origin is ne
 
 In the case of the y coordinate, anything below the origin is negative and anything above of the origin is positive.  Almost all the time on a regular generated map, your spawn point where you start the game will have a positive Y coordinate rather than negative or zero.   The Y coordinate also has limits.  You can dig no deeper than a Y value of -64.   You may build no higher than a Y value of 320.
 
-In the case of the z coordinate, anything forward / north of the origin is negative and anything to behind / south of the origin is positive.
+In the case of the z coordinate, anything forward / north of the origin is negative and anything behind / south of the origin is positive.
 
 <h3>Absolute Coordinates</h3>
 
