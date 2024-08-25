@@ -86,9 +86,11 @@ Most blocks are simple things that take up all the space used at a given locatio
 
 <table>
   <tr><th>Minecraft block name</th><th>Description</th></tr>
-  <tr><td>Rock</td><td>Plain Gray Rock</td></tr>
+  <tr><td>Chiseled_Quartz_Block</td><td>Fancy quartz blocks</td></tr>
   <tr><td>Dirt</td><td>Dirt.  Yep.  Just plain dirt.</td></tr>
   <tr><td>Grass_Block</td><td>Grassy Dirt</td></tr>
+  <tr><td>Rock</td><td>Plain Gray Rock</td></tr>
+  <tr><td>Stone_Bricks</td><td>Dark gray stone bricks</td></tr>
 </table>
 
 <h3>Air</h3>
