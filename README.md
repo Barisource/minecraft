@@ -82,7 +82,7 @@ Every block has a name within minecraft.  Shown below are only a few types, repr
 
 <h3>Normal Blocks</h3>
 
-Most blocks are simple things that take up all the space used at a given location.   Some of these names may include a character called an "underscore" ( _ ) that looks like an underline.   Any time you are referring to a block type by name make sure to include all characters within the name.
+Most blocks are simple things that take up all the space used at a given location.   Some of these names may include a character called an "underscore" ( _ ) that looks like an underline.   Any time you are referring to a block type by name make sure to include all characters within the name.  It doesn't matter though if you use uppercase or lowercase letters.  "StOnE" is treated by Minecraft the same as "stone" or "STONE".    
 
 <table>
   <tr><th>Minecraft block name</th><th>Description</th></tr>
